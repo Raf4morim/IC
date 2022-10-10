@@ -32,13 +32,13 @@ class WAVHist {
 	}
 
 	 //MID CHANNEL
-		std::ofstream out_file("MID_channel.txt");
+		std::ofstream out_file("./LAB1/sndfile-example-src/MID_channel.txt");
 		for(auto [value, counter] : mid_channel)
 			out_file << value << '\t' << counter << '\n';
 		out_file.close();
 
 		//SIDE CHANNEL
-		std::ofstream out_file2("SIDE_channel.txt");
+		std::ofstream out_file2("./LAB1/sndfile-example-src/SIDE_channel.txt");
 		for(auto [value, counter] : side_channel)
 			out_file2 << value << '\t' << counter << '\n';
 
