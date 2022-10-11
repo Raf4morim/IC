@@ -1,4 +1,4 @@
-# Install script for directory: /home/4AnoMatr/IC/Lab1/sndfile-example-src
+# Install script for directory: /home/4AnoMatr/IC/projetos/IC/Lab1/sndfile-example-src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -50,5 +50,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/4AnoMatr/IC/Lab1/sndfile-example-src/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/4AnoMatr/IC/projetos/IC/Lab1/sndfile-example-src/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

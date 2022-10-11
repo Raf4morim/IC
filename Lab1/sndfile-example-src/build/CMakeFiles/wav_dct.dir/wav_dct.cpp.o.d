@@ -1,5 +1,5 @@
-CMakeFiles/wav_hist.dir/wav_hist.cpp.o: \
- /home/4AnoMatr/IC/projetos/IC/Lab1/sndfile-example-src/wav_hist.cpp \
+CMakeFiles/wav_dct.dir/wav_dct.cpp.o: \
+ /home/4AnoMatr/IC/projetos/IC/Lab1/sndfile-example-src/wav_dct.cpp \
  /usr/include/stdc-predef.h /usr/include/c++/9/iostream \
  /usr/include/x86_64-linux-gnu/c++/9/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/9/bits/os_defines.h \
@@ -148,17 +148,27 @@ CMakeFiles/wav_hist.dir/wav_hist.cpp.o: \
  /usr/include/c++/9/bits/stl_relops.h \
  /usr/include/c++/9/bits/stl_vector.h \
  /usr/include/c++/9/bits/stl_bvector.h /usr/include/c++/9/bits/vector.tcc \
- /usr/include/sndfile.hh /usr/include/sndfile.h \
- /home/4AnoMatr/IC/projetos/IC/Lab1/sndfile-example-src/wav_hist.h \
- /usr/include/c++/9/map /usr/include/c++/9/bits/stl_tree.h \
- /usr/include/c++/9/ext/aligned_buffer.h \
- /usr/include/c++/9/bits/node_handle.h /usr/include/c++/9/optional \
- /usr/include/c++/9/bits/enable_special_members.h \
- /usr/include/c++/9/bits/stl_map.h /usr/include/c++/9/tuple \
- /usr/include/c++/9/array /usr/include/c++/9/bits/uses_allocator.h \
- /usr/include/c++/9/bits/invoke.h /usr/include/c++/9/bits/stl_multimap.h \
- /usr/include/c++/9/bits/erase_if.h /usr/include/c++/9/fstream \
- /usr/include/c++/9/bits/codecvt.h \
- /usr/include/x86_64-linux-gnu/c++/9/bits/basic_file.h \
- /usr/include/x86_64-linux-gnu/c++/9/bits/c++io.h \
- /usr/include/c++/9/bits/fstream.tcc
+ /usr/include/c++/9/cmath /usr/include/math.h \
+ /usr/include/x86_64-linux-gnu/bits/math-vector.h \
+ /usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h \
+ /usr/include/x86_64-linux-gnu/bits/flt-eval-method.h \
+ /usr/include/x86_64-linux-gnu/bits/fp-logb.h \
+ /usr/include/x86_64-linux-gnu/bits/fp-fast.h \
+ /usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h \
+ /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
+ /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h \
+ /usr/include/x86_64-linux-gnu/bits/iscanonical.h \
+ /usr/include/x86_64-linux-gnu/bits/mathinline.h \
+ /usr/include/c++/9/bits/specfun.h /usr/include/c++/9/tr1/gamma.tcc \
+ /usr/include/c++/9/tr1/special_function_util.h \
+ /usr/include/c++/9/tr1/bessel_function.tcc \
+ /usr/include/c++/9/tr1/beta_function.tcc \
+ /usr/include/c++/9/tr1/ell_integral.tcc \
+ /usr/include/c++/9/tr1/exp_integral.tcc \
+ /usr/include/c++/9/tr1/hypergeometric.tcc \
+ /usr/include/c++/9/tr1/legendre_function.tcc \
+ /usr/include/c++/9/tr1/modified_bessel_func.tcc \
+ /usr/include/c++/9/tr1/poly_hermite.tcc \
+ /usr/include/c++/9/tr1/poly_laguerre.tcc \
+ /usr/include/c++/9/tr1/riemann_zeta.tcc /usr/local/include/fftw3.h \
+ /usr/include/sndfile.hh /usr/include/sndfile.h

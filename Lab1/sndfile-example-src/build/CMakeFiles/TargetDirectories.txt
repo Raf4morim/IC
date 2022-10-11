@@ -1,5 +1,5 @@
-/home/4AnoMatr/IC/Lab1/sndfile-example-src/build/CMakeFiles/wav_cp.dir
-/home/4AnoMatr/IC/Lab1/sndfile-example-src/build/CMakeFiles/wav_hist.dir
-/home/4AnoMatr/IC/Lab1/sndfile-example-src/build/CMakeFiles/wav_dct.dir
-/home/4AnoMatr/IC/Lab1/sndfile-example-src/build/CMakeFiles/edit_cache.dir
-/home/4AnoMatr/IC/Lab1/sndfile-example-src/build/CMakeFiles/rebuild_cache.dir
+/home/4AnoMatr/IC/projetos/IC/Lab1/sndfile-example-src/build/CMakeFiles/wav_cp.dir
+/home/4AnoMatr/IC/projetos/IC/Lab1/sndfile-example-src/build/CMakeFiles/wav_hist.dir
+/home/4AnoMatr/IC/projetos/IC/Lab1/sndfile-example-src/build/CMakeFiles/wav_dct.dir
+/home/4AnoMatr/IC/projetos/IC/Lab1/sndfile-example-src/build/CMakeFiles/edit_cache.dir
+/home/4AnoMatr/IC/projetos/IC/Lab1/sndfile-example-src/build/CMakeFiles/rebuild_cache.dir
