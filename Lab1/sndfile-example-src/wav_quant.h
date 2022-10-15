@@ -21,19 +21,18 @@ class WAVQuant {
         size_t n { };
         for(auto s : samples)
             counts[n++] = s;
-        
+
         for(n = 0; n < samples.size(); n++)
         {
-            counts[n] = counts[n] >> (16 - n_bits);
-            counts[n] = counts[n] << (16 - n_bits);
-        }
+            counts[n] = (counts[n] >> (16 - n_bits));
+            counts[n] = (counts[n] << (16 - n_bits));
 
 
 
     }
 
 
-    
+
 
 
 };
