@@ -9,17 +9,16 @@
 
 using namespace std;
 
-class BitStream {
-    private:
-        fstream file;
-        int mode;
-        int size;
-        int pos;
-        int buffer;
+class BitStream
+{
+private:
+    fstream file;
+    int mode;
+    int size;
+    int pos;
+    int buffer;
 
-    
-    public:
-
+public:
     BitStream();
 
     BitStream(const char *filename, char modein);
@@ -35,8 +34,6 @@ class BitStream {
     bool eof();
 
     void close();
-
 };
-
 
 #endif

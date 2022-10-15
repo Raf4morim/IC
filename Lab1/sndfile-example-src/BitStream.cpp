@@ -36,8 +36,6 @@ BitStream::BitStream(const char *filename, char modein) {
         file.seekg(0, ios::beg);
     }
 
-
-
 }
 
 
@@ -98,8 +96,6 @@ bool BitStream::eof() {
     } else {
         return false;
     }
-
-    
 }
 
 void BitStream::close() {
@@ -111,5 +107,3 @@ void BitStream::close() {
 
     file.close();
 }
-
-
