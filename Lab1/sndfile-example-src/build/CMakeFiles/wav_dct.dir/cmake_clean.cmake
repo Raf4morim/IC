@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/4AnoMatr/IC/projetos/IC/Lab1/sndfile-example-bin/wav_dct"
-  "/home/4AnoMatr/IC/projetos/IC/Lab1/sndfile-example-bin/wav_dct.pdb"
+  "/mnt/c/Users/repol/Documents/GitHub/IC_default/sndfile-example-bin/wav_dct"
+  "/mnt/c/Users/repol/Documents/GitHub/IC_default/sndfile-example-bin/wav_dct.pdb"
   "CMakeFiles/wav_dct.dir/wav_dct.cpp.o"
   "CMakeFiles/wav_dct.dir/wav_dct.cpp.o.d"
 )

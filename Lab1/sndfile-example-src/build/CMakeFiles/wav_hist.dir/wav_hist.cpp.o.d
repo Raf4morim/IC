@@ -1,5 +1,5 @@
 CMakeFiles/wav_hist.dir/wav_hist.cpp.o: \
- /home/4AnoMatr/IC/projetos/IC/Lab1/sndfile-example-src/wav_hist.cpp \
+ /mnt/c/Users/repol/Documents/GitHub/IC_default/sndfile-example-src/wav_hist.cpp \
  /usr/include/stdc-predef.h /usr/include/c++/9/iostream \
  /usr/include/x86_64-linux-gnu/c++/9/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/9/bits/os_defines.h \
@@ -149,7 +149,7 @@ CMakeFiles/wav_hist.dir/wav_hist.cpp.o: \
  /usr/include/c++/9/bits/stl_vector.h \
  /usr/include/c++/9/bits/stl_bvector.h /usr/include/c++/9/bits/vector.tcc \
  /usr/include/sndfile.hh /usr/include/sndfile.h \
- /home/4AnoMatr/IC/projetos/IC/Lab1/sndfile-example-src/wav_hist.h \
+ /mnt/c/Users/repol/Documents/GitHub/IC_default/sndfile-example-src/wav_hist.h \
  /usr/include/c++/9/map /usr/include/c++/9/bits/stl_tree.h \
  /usr/include/c++/9/ext/aligned_buffer.h \
  /usr/include/c++/9/bits/node_handle.h /usr/include/c++/9/optional \
@@ -157,8 +157,4 @@ CMakeFiles/wav_hist.dir/wav_hist.cpp.o: \
  /usr/include/c++/9/bits/stl_map.h /usr/include/c++/9/tuple \
  /usr/include/c++/9/array /usr/include/c++/9/bits/uses_allocator.h \
  /usr/include/c++/9/bits/invoke.h /usr/include/c++/9/bits/stl_multimap.h \
- /usr/include/c++/9/bits/erase_if.h /usr/include/c++/9/fstream \
- /usr/include/c++/9/bits/codecvt.h \
- /usr/include/x86_64-linux-gnu/c++/9/bits/basic_file.h \
- /usr/include/x86_64-linux-gnu/c++/9/bits/c++io.h \
- /usr/include/c++/9/bits/fstream.tcc
+ /usr/include/c++/9/bits/erase_if.h

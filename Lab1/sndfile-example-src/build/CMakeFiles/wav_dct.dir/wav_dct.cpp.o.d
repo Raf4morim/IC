@@ -1,5 +1,5 @@
 CMakeFiles/wav_dct.dir/wav_dct.cpp.o: \
- /home/4AnoMatr/IC/projetos/IC/Lab1/sndfile-example-src/wav_dct.cpp \
+ /mnt/c/Users/repol/Documents/GitHub/IC_default/sndfile-example-src/wav_dct.cpp \
  /usr/include/stdc-predef.h /usr/include/c++/9/iostream \
  /usr/include/x86_64-linux-gnu/c++/9/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/9/bits/os_defines.h \
