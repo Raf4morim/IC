@@ -27,15 +27,10 @@ class WAVQuant {
             counts[n] = counts[n] >> (16 - n_bits);
             counts[n] = counts[n] << (16 - n_bits);
         }
-
-
-
     }
-
-
-    
-
-
+    void toFile(SndfileHandle output) const{
+        output.write(counts.data(), counts.size());
+    }
 };
 
 

@@ -20,3 +20,5 @@ target_link_libraries (wav_hist sndfile)
 add_executable (wav_dct wav_dct.cpp)
 target_link_libraries (wav_dct sndfile fftw3)
 
+add_executable (wav_cp wav_cp.cpp)
+target_link_libraries (wav_cp sndfile)

@@ -45,7 +45,6 @@ int main(int argc, char** argv) {
     size_t n_frames { };
     vector<short> samples(FRAMES_BUFFER_SIZE * input.channels());
 
-
     WAVQuant quantizer { FRAMES_BUFFER_SIZE, n_bits };
 
     while((n_frames = input.readf(samples.data(), FRAMES_BUFFER_SIZE)) > 0) {
