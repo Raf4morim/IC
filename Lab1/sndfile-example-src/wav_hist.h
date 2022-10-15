@@ -31,7 +31,7 @@ class WAVHist {
 
 	}
 
-	 //MID CHANNEL
+	 	//MID CHANNEL
 		std::ofstream out_file("./LAB1/sndfile-example-src/MID_channel.txt");
 		for(auto [value, counter] : mid_channel)
 			out_file << value << '\t' << counter << '\n';
