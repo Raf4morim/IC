@@ -57,10 +57,10 @@ RM = /usr/local/lib/python3.8/dist-packages/cmake/data/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /mnt/c/Users/repol/Documents/GitHub/IC_default/sndfile-example-src
+CMAKE_SOURCE_DIR = /mnt/c/Users/repol/Documents/GitHub/IC/Lab1/sndfile-example-src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /mnt/c/Users/repol/Documents/GitHub/IC_default/sndfile-example-src/build
+CMAKE_BINARY_DIR = /mnt/c/Users/repol/Documents/GitHub/IC/Lab1/sndfile-example-src/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/repol/Documents/GitHub/IC_default/sndfile-example-src/build/CMakeFiles /mnt/c/Users/repol/Documents/GitHub/IC_default/sndfile-example-src/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/repol/Documents/GitHub/IC/Lab1/sndfile-example-src/build/CMakeFiles /mnt/c/Users/repol/Documents/GitHub/IC/Lab1/sndfile-example-src/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/repol/Documents/GitHub/IC_default/sndfile-example-src/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/repol/Documents/GitHub/IC/Lab1/sndfile-example-src/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -154,6 +154,19 @@ wav_dct: cmake_check_build_system
 wav_dct/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/wav_dct.dir/build.make CMakeFiles/wav_dct.dir/build
 .PHONY : wav_dct/fast
+
+#=============================================================================
+# Target rules for targets named wav_quant
+
+# Build rule for target.
+wav_quant: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 wav_quant
+.PHONY : wav_quant
+
+# fast build rule for target.
+wav_quant/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/wav_quant.dir/build.make CMakeFiles/wav_quant.dir/build
+.PHONY : wav_quant/fast
 
 wav_cp.o: wav_cp.cpp.o
 .PHONY : wav_cp.o
@@ -227,6 +240,30 @@ wav_hist.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/wav_hist.dir/build.make CMakeFiles/wav_hist.dir/wav_hist.cpp.s
 .PHONY : wav_hist.cpp.s
 
+wav_quant.o: wav_quant.cpp.o
+.PHONY : wav_quant.o
+
+# target to build an object file
+wav_quant.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/wav_quant.dir/build.make CMakeFiles/wav_quant.dir/wav_quant.cpp.o
+.PHONY : wav_quant.cpp.o
+
+wav_quant.i: wav_quant.cpp.i
+.PHONY : wav_quant.i
+
+# target to preprocess a source file
+wav_quant.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/wav_quant.dir/build.make CMakeFiles/wav_quant.dir/wav_quant.cpp.i
+.PHONY : wav_quant.cpp.i
+
+wav_quant.s: wav_quant.cpp.s
+.PHONY : wav_quant.s
+
+# target to generate assembly for a file
+wav_quant.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/wav_quant.dir/build.make CMakeFiles/wav_quant.dir/wav_quant.cpp.s
+.PHONY : wav_quant.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -238,6 +275,7 @@ help:
 	@echo "... wav_cp"
 	@echo "... wav_dct"
 	@echo "... wav_hist"
+	@echo "... wav_quant"
 	@echo "... wav_cp.o"
 	@echo "... wav_cp.i"
 	@echo "... wav_cp.s"
@@ -247,6 +285,9 @@ help:
 	@echo "... wav_hist.o"
 	@echo "... wav_hist.i"
 	@echo "... wav_hist.s"
+	@echo "... wav_quant.o"
+	@echo "... wav_quant.i"
+	@echo "... wav_quant.s"
 .PHONY : help
 
 

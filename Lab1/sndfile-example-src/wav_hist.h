@@ -33,15 +33,16 @@ public:
 		}
 
 		// MID CHANNEL
-		std::ofstream out_file("./Lab1/sndfile-example-src/MID_channel.txt"	);
+		std::ofstream out_file("./Lab1/sndfile-example-src/MID_channel.dat"	);
 		for (auto [value, counter] : mid_channel)
 			out_file << value << '\t' << counter << '\n';
 		out_file.close();
 
 		// SIDE CHANNEL
-		std::ofstream out_file2("./Lab/sndfile-example-src/SIDE_channel.txt");
+		std::ofstream out_file2("./Lab1/sndfile-example-src/SIDE_channel.dat");
 		for (auto [value, counter] : side_channel)
 			out_file2 << value << '\t' << counter << '\n';
+		out_file2.close();
 	}
 
 	void dump(const size_t channel) const

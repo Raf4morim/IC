@@ -1,5 +1,5 @@
-CMakeFiles/wav_dct.dir/wav_dct.cpp.o: \
- /mnt/c/Users/repol/Documents/GitHub/IC/Lab1/sndfile-example-src/wav_dct.cpp \
+CMakeFiles/wav_quant.dir/wav_quant.cpp.o: \
+ /mnt/c/Users/repol/Documents/GitHub/IC/Lab1/sndfile-example-src/wav_quant.cpp \
  /usr/include/stdc-predef.h /usr/include/c++/9/iostream \
  /usr/include/x86_64-linux-gnu/c++/9/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/9/bits/os_defines.h \
@@ -142,12 +142,14 @@ CMakeFiles/wav_dct.dir/wav_dct.cpp.o: \
  /usr/include/c++/9/bits/locale_facets.tcc \
  /usr/include/c++/9/bits/basic_ios.tcc \
  /usr/include/c++/9/bits/ostream.tcc /usr/include/c++/9/istream \
- /usr/include/c++/9/bits/istream.tcc /usr/include/c++/9/vector \
+ /usr/include/c++/9/bits/istream.tcc /usr/include/sndfile.hh \
+ /usr/include/sndfile.h /usr/include/c++/9/vector \
  /usr/include/c++/9/bits/stl_construct.h \
  /usr/include/c++/9/bits/stl_uninitialized.h /usr/include/c++/9/utility \
  /usr/include/c++/9/bits/stl_relops.h \
  /usr/include/c++/9/bits/stl_vector.h \
  /usr/include/c++/9/bits/stl_bvector.h /usr/include/c++/9/bits/vector.tcc \
+ /mnt/c/Users/repol/Documents/GitHub/IC/Lab1/sndfile-example-src/wav_quant.h \
  /usr/include/c++/9/cmath /usr/include/math.h \
  /usr/include/x86_64-linux-gnu/bits/math-vector.h \
  /usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h \
@@ -170,5 +172,4 @@ CMakeFiles/wav_dct.dir/wav_dct.cpp.o: \
  /usr/include/c++/9/tr1/modified_bessel_func.tcc \
  /usr/include/c++/9/tr1/poly_hermite.tcc \
  /usr/include/c++/9/tr1/poly_laguerre.tcc \
- /usr/include/c++/9/tr1/riemann_zeta.tcc /usr/local/include/fftw3.h \
- /usr/include/sndfile.hh /usr/include/sndfile.h
+ /usr/include/c++/9/tr1/riemann_zeta.tcc
