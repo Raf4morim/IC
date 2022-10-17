@@ -7,9 +7,8 @@ using namespace std;
 
 constexpr size_t FRAMES_BUFFER_SIZE = 65536;
 
-int main(int argc, char **argv)
-{
-    if (argc != 3)
+int main(int argc, char **argv){
+    if (argc != 4)
     {
         cerr << "Usage: " << argv[0] << " <input_wav> <n_bits> <output_wav>" << endl;
         return 1;
@@ -42,22 +41,21 @@ int main(int argc, char **argv)
     }
 
     int n_bits = stoi(argv[argc - 2]);
-    if (n_bits < 1 || n_bits > 16)
+    if (n_bits < 1 || n_bits > 15) // Quanto menos bits mais ruidoso
     {
         cerr << "Invalid number of bits: " << n_bits << endl;
         return 1;
     }
 
-    size_t n_frames{};
     vector<short> samples(FRAMES_BUFFER_SIZE * input.channels());
-
-    WAVQuant quantizer{FRAMES_BUFFER_SIZE, n_bits};
-
-    while ((n_frames = input.readf(samples.data(), FRAMES_BUFFER_SIZE)) > 0)
-    {
-        quantizer.update(samples, n_bits);
-        output.writef(samples.data(), n_frames);
+    WAVQuant quantizer{samples.size()};
+    size_t n_frames;
+    int length {0};
+    while ((n_frames = input.readf(samples.data(), FRAMES_BUFFER_SIZE))){
+        length += n_frames * input.channels();
+        samples.resize(n_frames * input.channels());
+        quantizer.escUn(samples, 16-n_bits);
     }
-
+    quantizer.toFile(output);
     return 0;
 }

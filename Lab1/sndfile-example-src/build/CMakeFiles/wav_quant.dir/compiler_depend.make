@@ -192,59 +192,8 @@ CMakeFiles/wav_quant.dir/wav_quant.cpp.o: /mnt/c/Users/repol/Documents/GitHub/IC
   /usr/include/c++/9/bits/stl_vector.h \
   /usr/include/c++/9/bits/stl_bvector.h \
   /usr/include/c++/9/bits/vector.tcc \
-  /mnt/c/Users/repol/Documents/GitHub/IC/Lab1/sndfile-example-src/wav_quant.h \
-  /usr/include/c++/9/cmath \
-  /usr/include/math.h \
-  /usr/include/x86_64-linux-gnu/bits/math-vector.h \
-  /usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h \
-  /usr/include/x86_64-linux-gnu/bits/flt-eval-method.h \
-  /usr/include/x86_64-linux-gnu/bits/fp-logb.h \
-  /usr/include/x86_64-linux-gnu/bits/fp-fast.h \
-  /usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h \
-  /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
-  /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h \
-  /usr/include/x86_64-linux-gnu/bits/iscanonical.h \
-  /usr/include/x86_64-linux-gnu/bits/mathinline.h \
-  /usr/include/c++/9/bits/specfun.h \
-  /usr/include/c++/9/tr1/gamma.tcc \
-  /usr/include/c++/9/tr1/special_function_util.h \
-  /usr/include/c++/9/tr1/bessel_function.tcc \
-  /usr/include/c++/9/tr1/beta_function.tcc \
-  /usr/include/c++/9/tr1/ell_integral.tcc \
-  /usr/include/c++/9/tr1/exp_integral.tcc \
-  /usr/include/c++/9/tr1/hypergeometric.tcc \
-  /usr/include/c++/9/tr1/legendre_function.tcc \
-  /usr/include/c++/9/tr1/modified_bessel_func.tcc \
-  /usr/include/c++/9/tr1/poly_hermite.tcc \
-  /usr/include/c++/9/tr1/poly_laguerre.tcc \
-  /usr/include/c++/9/tr1/riemann_zeta.tcc
+  /mnt/c/Users/repol/Documents/GitHub/IC/Lab1/sndfile-example-src/wav_quant.h
 
-
-/usr/include/c++/9/tr1/riemann_zeta.tcc:
-
-/usr/include/c++/9/tr1/modified_bessel_func.tcc:
-
-/usr/include/c++/9/tr1/legendre_function.tcc:
-
-/usr/include/c++/9/tr1/exp_integral.tcc:
-
-/usr/include/c++/9/tr1/bessel_function.tcc:
-
-/usr/include/c++/9/bits/specfun.h:
-
-/usr/include/x86_64-linux-gnu/bits/mathinline.h:
-
-/usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h:
-
-/usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h:
-
-/usr/include/x86_64-linux-gnu/bits/mathcalls.h:
-
-/usr/include/x86_64-linux-gnu/bits/math-vector.h:
-
-/usr/include/math.h:
-
-/usr/include/c++/9/cmath:
 
 /mnt/c/Users/repol/Documents/GitHub/IC/Lab1/sndfile-example-src/wav_quant.h:
 
@@ -292,15 +241,11 @@ CMakeFiles/wav_quant.dir/wav_quant.cpp.o: /mnt/c/Users/repol/Documents/GitHub/IC
 
 /usr/include/c++/9/cstdio:
 
-/usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h:
-
 /usr/include/c++/9/bits/std_abs.h:
 
 /usr/include/x86_64-linux-gnu/bits/stdlib.h:
 
 /usr/include/x86_64-linux-gnu/bits/stdlib-float.h:
-
-/usr/include/c++/9/tr1/poly_hermite.tcc:
 
 /usr/include/alloca.h:
 
@@ -330,8 +275,6 @@ CMakeFiles/wav_quant.dir/wav_quant.cpp.o: /mnt/c/Users/repol/Documents/GitHub/IC
 
 /usr/include/c++/9/ext/type_traits.h:
 
-/usr/include/c++/9/tr1/ell_integral.tcc:
-
 /usr/include/c++/9/bits/nested_exception.h:
 
 /usr/include/c++/9/cctype:
@@ -352,8 +295,6 @@ CMakeFiles/wav_quant.dir/wav_quant.cpp.o: /mnt/c/Users/repol/Documents/GitHub/IC
 
 /usr/include/c++/9/bits/move.h:
 
-/usr/include/x86_64-linux-gnu/bits/fp-logb.h:
-
 /usr/include/sndfile.hh:
 
 /usr/include/c++/9/streambuf:
@@ -371,8 +312,6 @@ CMakeFiles/wav_quant.dir/wav_quant.cpp.o: /mnt/c/Users/repol/Documents/GitHub/IC
 /usr/include/c++/9/bits/exception.h:
 
 /usr/include/x86_64-linux-gnu/gnu/stubs.h:
-
-/usr/include/x86_64-linux-gnu/bits/flt-eval-method.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h:
 
@@ -420,13 +359,9 @@ CMakeFiles/wav_quant.dir/wav_quant.cpp.o: /mnt/c/Users/repol/Documents/GitHub/IC
 
 /usr/include/stdint.h:
 
-/usr/include/c++/9/tr1/gamma.tcc:
-
 /usr/include/c++/9/iostream:
 
 /usr/include/c++/9/bits/hash_bytes.h:
-
-/usr/include/x86_64-linux-gnu/bits/fp-fast.h:
 
 /usr/include/c++/9/bits/cpp_type_traits.h:
 
@@ -449,8 +384,6 @@ CMakeFiles/wav_quant.dir/wav_quant.cpp.o: /mnt/c/Users/repol/Documents/GitHub/IC
 /usr/include/x86_64-linux-gnu/bits/stdlib-bsearch.h:
 
 /usr/include/c++/9/bits/ostream_insert.h:
-
-/usr/include/c++/9/tr1/poly_laguerre.tcc:
 
 /usr/include/c++/9/bits/vector.tcc:
 
@@ -528,8 +461,6 @@ CMakeFiles/wav_quant.dir/wav_quant.cpp.o: /mnt/c/Users/repol/Documents/GitHub/IC
 
 /usr/include/x86_64-linux-gnu/bits/types/time_t.h:
 
-/usr/include/c++/9/tr1/hypergeometric.tcc:
-
 /usr/include/x86_64-linux-gnu/c++/9/bits/os_defines.h:
 
 /usr/include/c++/9/clocale:
@@ -566,8 +497,6 @@ CMakeFiles/wav_quant.dir/wav_quant.cpp.o: /mnt/c/Users/repol/Documents/GitHub/IC
 
 /usr/include/x86_64-linux-gnu/bits/struct_mutex.h:
 
-/usr/include/c++/9/tr1/special_function_util.h:
-
 /usr/include/x86_64-linux-gnu/bits/errno.h:
 
 /usr/include/c++/9/new:
@@ -599,8 +528,6 @@ CMakeFiles/wav_quant.dir/wav_quant.cpp.o: /mnt/c/Users/repol/Documents/GitHub/IC
 /usr/include/c++/9/ios:
 
 /usr/include/x86_64-linux-gnu/bits/types/clock_t.h:
-
-/usr/include/x86_64-linux-gnu/bits/iscanonical.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h:
 
@@ -635,8 +562,6 @@ CMakeFiles/wav_quant.dir/wav_quant.cpp.o: /mnt/c/Users/repol/Documents/GitHub/IC
 /usr/include/c++/9/bits/cxxabi_forced.h:
 
 /usr/include/c++/9/ext/alloc_traits.h:
-
-/usr/include/c++/9/tr1/beta_function.tcc:
 
 /usr/include/x86_64-linux-gnu/bits/wctype-wchar.h:
 
