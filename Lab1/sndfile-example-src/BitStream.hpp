@@ -9,31 +9,29 @@
 
 using namespace std;
 
-class BitStream
-{
-private:
-    fstream file;
-    int mode;
-    int size;
-    int pos;
-    int buffer;
+class BitStream {
+    private:
+        fstream file;
+        int mode;
+        int size;
+        int pointer;
+        unsigned char buffer;
 
-public:
-    BitStream();
+    
+    public:
+            BitStream();
+            BitStream(const char *filename, char mode);
+            unsigned char readBit();
+            void writeBit(char bit);
+            void readNBits(int n, unsigned char *bits);
+            void writeNBits(int n, unsigned char *bits);
+            bool eof();
+            void close();
 
-    BitStream(const char *filename, char modein);
+        
 
-    unsigned char readBit();
-
-    void writeBit(unsigned char bit);
-
-    void readNBits(unsigned char *bits, int n);
-
-    void writeNBits(unsigned char *bits, int n);
-
-    bool eof();
-
-    void close();
+        
 };
+
 
 #endif
