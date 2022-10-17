@@ -1,0 +1,46 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/mnt/c/Users/repol/Documents/GitHub/IC/Lab1/sndfile-example-src/build/_deps/matplotlib-subbuild/CMakeFiles/matplotlib-populate"
+		},
+		{
+			"file" : "/mnt/c/Users/repol/Documents/GitHub/IC/Lab1/sndfile-example-src/build/_deps/matplotlib-subbuild/CMakeFiles/matplotlib-populate.rule"
+		},
+		{
+			"file" : "/mnt/c/Users/repol/Documents/GitHub/IC/Lab1/sndfile-example-src/build/_deps/matplotlib-subbuild/CMakeFiles/matplotlib-populate-complete.rule"
+		},
+		{
+			"file" : "/mnt/c/Users/repol/Documents/GitHub/IC/Lab1/sndfile-example-src/build/_deps/matplotlib-subbuild/matplotlib-populate-prefix/src/matplotlib-populate-stamp/matplotlib-populate-build.rule"
+		},
+		{
+			"file" : "/mnt/c/Users/repol/Documents/GitHub/IC/Lab1/sndfile-example-src/build/_deps/matplotlib-subbuild/matplotlib-populate-prefix/src/matplotlib-populate-stamp/matplotlib-populate-configure.rule"
+		},
+		{
+			"file" : "/mnt/c/Users/repol/Documents/GitHub/IC/Lab1/sndfile-example-src/build/_deps/matplotlib-subbuild/matplotlib-populate-prefix/src/matplotlib-populate-stamp/matplotlib-populate-download.rule"
+		},
+		{
+			"file" : "/mnt/c/Users/repol/Documents/GitHub/IC/Lab1/sndfile-example-src/build/_deps/matplotlib-subbuild/matplotlib-populate-prefix/src/matplotlib-populate-stamp/matplotlib-populate-install.rule"
+		},
+		{
+			"file" : "/mnt/c/Users/repol/Documents/GitHub/IC/Lab1/sndfile-example-src/build/_deps/matplotlib-subbuild/matplotlib-populate-prefix/src/matplotlib-populate-stamp/matplotlib-populate-mkdir.rule"
+		},
+		{
+			"file" : "/mnt/c/Users/repol/Documents/GitHub/IC/Lab1/sndfile-example-src/build/_deps/matplotlib-subbuild/matplotlib-populate-prefix/src/matplotlib-populate-stamp/matplotlib-populate-patch.rule"
+		},
+		{
+			"file" : "/mnt/c/Users/repol/Documents/GitHub/IC/Lab1/sndfile-example-src/build/_deps/matplotlib-subbuild/matplotlib-populate-prefix/src/matplotlib-populate-stamp/matplotlib-populate-test.rule"
+		},
+		{
+			"file" : "/mnt/c/Users/repol/Documents/GitHub/IC/Lab1/sndfile-example-src/build/_deps/matplotlib-subbuild/matplotlib-populate-prefix/src/matplotlib-populate-stamp/matplotlib-populate-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"matplotlib-populate"
+		],
+		"name" : "matplotlib-populate"
+	}
+}

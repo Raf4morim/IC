@@ -1,0 +1,3 @@
+/mnt/c/Users/repol/Documents/GitHub/IC/Lab1/sndfile-example-src/build/_deps/matplotlib-subbuild/CMakeFiles/matplotlib-populate.dir
+/mnt/c/Users/repol/Documents/GitHub/IC/Lab1/sndfile-example-src/build/_deps/matplotlib-subbuild/CMakeFiles/edit_cache.dir
+/mnt/c/Users/repol/Documents/GitHub/IC/Lab1/sndfile-example-src/build/_deps/matplotlib-subbuild/CMakeFiles/rebuild_cache.dir

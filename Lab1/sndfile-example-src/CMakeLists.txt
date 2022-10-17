@@ -11,14 +11,23 @@ SET (CMAKE_CXX_FLAGS_DEBUG "-g3 -fsanitize=address")
 SET (BASE_DIR ${CMAKE_SOURCE_DIR} )
 SET (CMAKE_RUNTIME_OUTPUT_DIRECTORY ${BASE_DIR}/../sndfile-example-bin)
 
-add_executable (wav_cp wav_cp.cpp)
-target_link_libraries (wav_cp sndfile)
-
 add_executable (wav_hist wav_hist.cpp)
 target_link_libraries (wav_hist sndfile)
+target_link_libraries(wav_hist ${OpenCV_LIBS} )
+
+add_executable (wav_cp wav_cp.cpp)
+target_link_libraries (wav_cp sndfile)
 
 add_executable (wav_dct wav_dct.cpp)
 target_link_libraries (wav_dct sndfile fftw3)
 
 add_executable (wav_quant wav_quant.cpp)
 target_link_libraries (wav_quant sndfile)
+
+add_executable (wav_cmp wav_cmp.cpp)
+target_link_libraries (wav_cmp sndfile)
+
+# add_executable(wav_effects wav_effects.cpp)
+# target_link_libraries(wav_effects sndfile)
+
+# add_executable(encode_decode encode_decode.cpp)

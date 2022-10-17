@@ -27,10 +27,6 @@ class BitStream {
             void writeNBits(int n, unsigned char *bits);
             bool eof();
             void close();
-
-        
-
-        
 };
 
 

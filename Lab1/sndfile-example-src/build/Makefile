@@ -117,19 +117,6 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named wav_cp
-
-# Build rule for target.
-wav_cp: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 wav_cp
-.PHONY : wav_cp
-
-# fast build rule for target.
-wav_cp/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/wav_cp.dir/build.make CMakeFiles/wav_cp.dir/build
-.PHONY : wav_cp/fast
-
-#=============================================================================
 # Target rules for targets named wav_hist
 
 # Build rule for target.
@@ -141,6 +128,19 @@ wav_hist: cmake_check_build_system
 wav_hist/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/wav_hist.dir/build.make CMakeFiles/wav_hist.dir/build
 .PHONY : wav_hist/fast
+
+#=============================================================================
+# Target rules for targets named wav_cp
+
+# Build rule for target.
+wav_cp: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 wav_cp
+.PHONY : wav_cp
+
+# fast build rule for target.
+wav_cp/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/wav_cp.dir/build.make CMakeFiles/wav_cp.dir/build
+.PHONY : wav_cp/fast
 
 #=============================================================================
 # Target rules for targets named wav_dct
@@ -167,6 +167,43 @@ wav_quant: cmake_check_build_system
 wav_quant/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/wav_quant.dir/build.make CMakeFiles/wav_quant.dir/build
 .PHONY : wav_quant/fast
+
+#=============================================================================
+# Target rules for targets named wav_cmp
+
+# Build rule for target.
+wav_cmp: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 wav_cmp
+.PHONY : wav_cmp
+
+# fast build rule for target.
+wav_cmp/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/wav_cmp.dir/build.make CMakeFiles/wav_cmp.dir/build
+.PHONY : wav_cmp/fast
+
+wav_cmp.o: wav_cmp.cpp.o
+.PHONY : wav_cmp.o
+
+# target to build an object file
+wav_cmp.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/wav_cmp.dir/build.make CMakeFiles/wav_cmp.dir/wav_cmp.cpp.o
+.PHONY : wav_cmp.cpp.o
+
+wav_cmp.i: wav_cmp.cpp.i
+.PHONY : wav_cmp.i
+
+# target to preprocess a source file
+wav_cmp.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/wav_cmp.dir/build.make CMakeFiles/wav_cmp.dir/wav_cmp.cpp.i
+.PHONY : wav_cmp.cpp.i
+
+wav_cmp.s: wav_cmp.cpp.s
+.PHONY : wav_cmp.s
+
+# target to generate assembly for a file
+wav_cmp.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/wav_cmp.dir/build.make CMakeFiles/wav_cmp.dir/wav_cmp.cpp.s
+.PHONY : wav_cmp.cpp.s
 
 wav_cp.o: wav_cp.cpp.o
 .PHONY : wav_cp.o
@@ -272,10 +309,14 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... wav_cmp"
 	@echo "... wav_cp"
 	@echo "... wav_dct"
 	@echo "... wav_hist"
 	@echo "... wav_quant"
+	@echo "... wav_cmp.o"
+	@echo "... wav_cmp.i"
+	@echo "... wav_cmp.s"
 	@echo "... wav_cp.o"
 	@echo "... wav_cp.i"
 	@echo "... wav_cp.s"
