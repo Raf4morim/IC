@@ -10,45 +10,45 @@
 class WAVHist
 {
 private:
-	std::vector<std::map<short, size_t>> counts;
-	std::map<short, size_t> mid_channel;
-	std::map<short, size_t> side_channel;
+	std::map<short, size_t> mid_ch;
+	std::map<short, size_t> side_ch;
+	std::vector<std::map<short, size_t>> c;
 
 public:
-	WAVHist(const SndfileHandle &sfh)
-	{
-		counts.resize(sfh.channels());
+	WAVHist(const SndfileHandle & sfh){
+		c.resize(sfh.channels());
 	}
 
-	void update(const std::vector<short> &samples)
+	void update(const std::vector<short> & samples)
 	{
-		size_t n{};
-		for (auto s : samples) // reconhece o tipo automaticamente
-			counts[n++ % counts.size()][s]++;
-
-		for (n = 0; n + 1 < samples.size(); n += 2)
-		{
-			mid_channel[((samples[n] + samples[n + 1]) / 2)]++;
-			side_channel[((samples[n] - samples[n + 1]) / 2)]++;
+		for(int i=0; i < (int) samples.size()/2; i+=2){
+			c[0][samples[i]]++;
+			c[1][samples[i+1]]++;
+			mid_ch[(samples[i] + samples[i+1]) / 2]++;
+			side_ch[(samples[i] - samples[i+1]) / 2]++;
 		}
-
-		// MID CHANNEL
-		std::ofstream out_file("./Lab1/sndfile-example-src/MID_channel.dat"	);
-		for (auto [value, counter] : mid_channel)
-			out_file << value << '\t' << counter << '\n';
-		out_file.close();
-
-		// SIDE CHANNEL
-		std::ofstream out_file2("./Lab1/sndfile-example-src/SIDE_channel.dat");
-		for (auto [value, counter] : side_channel)
-			out_file2 << value << '\t' << counter << '\n';
-		out_file2.close();
 	}
 
-	void dump(const size_t channel) const
-	{ // O const
-		for (auto [value, counter] : counts[channel])
-			std::cout << value << '\t' << counter << '\n';
+
+	void midD(void) {
+		std::ofstream midFile("midChannel.dat");
+		for (auto [value, counter] : mid_ch)
+			midFile << value << '\t' << counter << '\n';
+		midFile.close();
+	}
+
+	void sideD(void) {
+		std::ofstream sideFile("sideChannel.dat");
+		for (auto [value, counter] : side_ch)
+			sideFile << value << '\t' << counter << '\n';
+		sideFile.close();
+	}
+
+	void dump(const size_t channel) const{ // O const
+		std::ofstream oF("channel.dat");
+		for (auto [value, counter] : c[channel])
+			oF << value << '\t' << counter << '\n';
+		oF.close();
 	}
 };
 
