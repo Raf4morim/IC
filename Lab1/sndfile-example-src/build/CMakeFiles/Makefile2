@@ -63,12 +63,13 @@ CMAKE_BINARY_DIR = /mnt/c/Users/repol/Documents/GitHub/IC/Lab1/sndfile-example-s
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/wav_hist.dir/all
 all: CMakeFiles/wav_cp.dir/all
+all: CMakeFiles/wav_hist.dir/all
 all: CMakeFiles/wav_dct.dir/all
 all: CMakeFiles/wav_quant.dir/all
 all: CMakeFiles/wav_cmp.dir/all
-all: CMakeFiles/BitStream.dir/all
+all: CMakeFiles/encoder.dir/all
+all: CMakeFiles/decoder.dir/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
@@ -76,39 +77,14 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/wav_hist.dir/clean
 clean: CMakeFiles/wav_cp.dir/clean
+clean: CMakeFiles/wav_hist.dir/clean
 clean: CMakeFiles/wav_dct.dir/clean
 clean: CMakeFiles/wav_quant.dir/clean
 clean: CMakeFiles/wav_cmp.dir/clean
-clean: CMakeFiles/BitStream.dir/clean
+clean: CMakeFiles/encoder.dir/clean
+clean: CMakeFiles/decoder.dir/clean
 .PHONY : clean
-
-#=============================================================================
-# Target rules for target CMakeFiles/wav_hist.dir
-
-# All Build rule for target.
-CMakeFiles/wav_hist.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/wav_hist.dir/build.make CMakeFiles/wav_hist.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/wav_hist.dir/build.make CMakeFiles/wav_hist.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/mnt/c/Users/repol/Documents/GitHub/IC/Lab1/sndfile-example-src/build/CMakeFiles --progress-num=7,8 "Built target wav_hist"
-.PHONY : CMakeFiles/wav_hist.dir/all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/wav_hist.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/repol/Documents/GitHub/IC/Lab1/sndfile-example-src/build/CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/wav_hist.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/repol/Documents/GitHub/IC/Lab1/sndfile-example-src/build/CMakeFiles 0
-.PHONY : CMakeFiles/wav_hist.dir/rule
-
-# Convenience name for target.
-wav_hist: CMakeFiles/wav_hist.dir/rule
-.PHONY : wav_hist
-
-# clean rule for target.
-CMakeFiles/wav_hist.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/wav_hist.dir/build.make CMakeFiles/wav_hist.dir/clean
-.PHONY : CMakeFiles/wav_hist.dir/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/wav_cp.dir
@@ -117,7 +93,7 @@ CMakeFiles/wav_hist.dir/clean:
 CMakeFiles/wav_cp.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/wav_cp.dir/build.make CMakeFiles/wav_cp.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/wav_cp.dir/build.make CMakeFiles/wav_cp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/mnt/c/Users/repol/Documents/GitHub/IC/Lab1/sndfile-example-src/build/CMakeFiles --progress-num=3,4 "Built target wav_cp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/mnt/c/Users/repol/Documents/GitHub/IC/Lab1/sndfile-example-src/build/CMakeFiles --progress-num=7,8 "Built target wav_cp"
 .PHONY : CMakeFiles/wav_cp.dir/all
 
 # Build rule for subdir invocation for target.
@@ -137,13 +113,39 @@ CMakeFiles/wav_cp.dir/clean:
 .PHONY : CMakeFiles/wav_cp.dir/clean
 
 #=============================================================================
+# Target rules for target CMakeFiles/wav_hist.dir
+
+# All Build rule for target.
+CMakeFiles/wav_hist.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/wav_hist.dir/build.make CMakeFiles/wav_hist.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/wav_hist.dir/build.make CMakeFiles/wav_hist.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/mnt/c/Users/repol/Documents/GitHub/IC/Lab1/sndfile-example-src/build/CMakeFiles --progress-num=11,12 "Built target wav_hist"
+.PHONY : CMakeFiles/wav_hist.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/wav_hist.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/repol/Documents/GitHub/IC/Lab1/sndfile-example-src/build/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/wav_hist.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/repol/Documents/GitHub/IC/Lab1/sndfile-example-src/build/CMakeFiles 0
+.PHONY : CMakeFiles/wav_hist.dir/rule
+
+# Convenience name for target.
+wav_hist: CMakeFiles/wav_hist.dir/rule
+.PHONY : wav_hist
+
+# clean rule for target.
+CMakeFiles/wav_hist.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/wav_hist.dir/build.make CMakeFiles/wav_hist.dir/clean
+.PHONY : CMakeFiles/wav_hist.dir/clean
+
+#=============================================================================
 # Target rules for target CMakeFiles/wav_dct.dir
 
 # All Build rule for target.
 CMakeFiles/wav_dct.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/wav_dct.dir/build.make CMakeFiles/wav_dct.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/wav_dct.dir/build.make CMakeFiles/wav_dct.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/mnt/c/Users/repol/Documents/GitHub/IC/Lab1/sndfile-example-src/build/CMakeFiles --progress-num=5,6 "Built target wav_dct"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/mnt/c/Users/repol/Documents/GitHub/IC/Lab1/sndfile-example-src/build/CMakeFiles --progress-num=9,10 "Built target wav_dct"
 .PHONY : CMakeFiles/wav_dct.dir/all
 
 # Build rule for subdir invocation for target.
@@ -169,7 +171,7 @@ CMakeFiles/wav_dct.dir/clean:
 CMakeFiles/wav_quant.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/wav_quant.dir/build.make CMakeFiles/wav_quant.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/wav_quant.dir/build.make CMakeFiles/wav_quant.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/mnt/c/Users/repol/Documents/GitHub/IC/Lab1/sndfile-example-src/build/CMakeFiles --progress-num=9,10 "Built target wav_quant"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/mnt/c/Users/repol/Documents/GitHub/IC/Lab1/sndfile-example-src/build/CMakeFiles --progress-num=13,14 "Built target wav_quant"
 .PHONY : CMakeFiles/wav_quant.dir/all
 
 # Build rule for subdir invocation for target.
@@ -195,7 +197,7 @@ CMakeFiles/wav_quant.dir/clean:
 CMakeFiles/wav_cmp.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/wav_cmp.dir/build.make CMakeFiles/wav_cmp.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/wav_cmp.dir/build.make CMakeFiles/wav_cmp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/mnt/c/Users/repol/Documents/GitHub/IC/Lab1/sndfile-example-src/build/CMakeFiles --progress-num=1,2 "Built target wav_cmp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/mnt/c/Users/repol/Documents/GitHub/IC/Lab1/sndfile-example-src/build/CMakeFiles --progress-num=5,6 "Built target wav_cmp"
 .PHONY : CMakeFiles/wav_cmp.dir/all
 
 # Build rule for subdir invocation for target.
@@ -215,30 +217,56 @@ CMakeFiles/wav_cmp.dir/clean:
 .PHONY : CMakeFiles/wav_cmp.dir/clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/BitStream.dir
+# Target rules for target CMakeFiles/encoder.dir
 
 # All Build rule for target.
-CMakeFiles/BitStream.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BitStream.dir/build.make CMakeFiles/BitStream.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BitStream.dir/build.make CMakeFiles/BitStream.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/mnt/c/Users/repol/Documents/GitHub/IC/Lab1/sndfile-example-src/build/CMakeFiles --progress-num= "Built target BitStream"
-.PHONY : CMakeFiles/BitStream.dir/all
+CMakeFiles/encoder.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/encoder.dir/build.make CMakeFiles/encoder.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/encoder.dir/build.make CMakeFiles/encoder.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/mnt/c/Users/repol/Documents/GitHub/IC/Lab1/sndfile-example-src/build/CMakeFiles --progress-num=3,4 "Built target encoder"
+.PHONY : CMakeFiles/encoder.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/BitStream.dir/rule: cmake_check_build_system
+CMakeFiles/encoder.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/repol/Documents/GitHub/IC/Lab1/sndfile-example-src/build/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/encoder.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/repol/Documents/GitHub/IC/Lab1/sndfile-example-src/build/CMakeFiles 0
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/BitStream.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/repol/Documents/GitHub/IC/Lab1/sndfile-example-src/build/CMakeFiles 0
-.PHONY : CMakeFiles/BitStream.dir/rule
+.PHONY : CMakeFiles/encoder.dir/rule
 
 # Convenience name for target.
-BitStream: CMakeFiles/BitStream.dir/rule
-.PHONY : BitStream
+encoder: CMakeFiles/encoder.dir/rule
+.PHONY : encoder
 
 # clean rule for target.
-CMakeFiles/BitStream.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BitStream.dir/build.make CMakeFiles/BitStream.dir/clean
-.PHONY : CMakeFiles/BitStream.dir/clean
+CMakeFiles/encoder.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/encoder.dir/build.make CMakeFiles/encoder.dir/clean
+.PHONY : CMakeFiles/encoder.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/decoder.dir
+
+# All Build rule for target.
+CMakeFiles/decoder.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/decoder.dir/build.make CMakeFiles/decoder.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/decoder.dir/build.make CMakeFiles/decoder.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/mnt/c/Users/repol/Documents/GitHub/IC/Lab1/sndfile-example-src/build/CMakeFiles --progress-num=1,2 "Built target decoder"
+.PHONY : CMakeFiles/decoder.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/decoder.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/repol/Documents/GitHub/IC/Lab1/sndfile-example-src/build/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/decoder.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/repol/Documents/GitHub/IC/Lab1/sndfile-example-src/build/CMakeFiles 0
+.PHONY : CMakeFiles/decoder.dir/rule
+
+# Convenience name for target.
+decoder: CMakeFiles/decoder.dir/rule
+.PHONY : decoder
+
+# clean rule for target.
+CMakeFiles/decoder.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/decoder.dir/build.make CMakeFiles/decoder.dir/clean
+.PHONY : CMakeFiles/decoder.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

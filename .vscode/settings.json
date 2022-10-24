@@ -9,6 +9,21 @@
         "system_error": "cpp",
         "type_traits": "cpp",
         "fstream": "cpp",
-        "iosfwd": "cpp"
-    }
+        "iosfwd": "cpp",
+        "array": "cpp",
+        "bitset": "cpp",
+        "initializer_list": "cpp",
+        "string_view": "cpp",
+        "utility": "cpp",
+        "map": "cpp"
+    },
+    "cSpell.ignoreWords": [
+        "Ficheiro"
+    ],
+    "cSpell.words": [
+        "BITSTREAM",
+        "charbits",
+        "conta",
+        "tamanho"
+    ]
 }

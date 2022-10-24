@@ -1,5 +1,5 @@
 #include <iostream>
-#include "bit_stream.h"
+#include "BitStream.hpp"
 
 using namespace std;
 

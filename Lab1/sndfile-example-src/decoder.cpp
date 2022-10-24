@@ -1,5 +1,5 @@
 #include <iostream>
-#include "bit_stream.h"
+#include "BitStream.hpp"
 
 using namespace std;
 
@@ -24,7 +24,7 @@ int main (int argc, char *argv[]) {
 
     //read the bits from the input file
     vector<int> bits;
-    bits = inputFile.readBits(inputFile.getFileSize() * 8);
+    bits = inputFile.readBits(inputFile.tamanhoF() * 8);
     inputFile.close();
 
     //write the bits to the output file
