@@ -12,7 +12,6 @@ int main (int argc, char *argv[]) {
         return 1 ;
     } 
 
-    //open the input file
     ifstream inputFile (argv [1], ios::in) ;
     if (! inputFile) {
         cerr << "Error: could not open input file " << argv [1] << ".\n" ;
