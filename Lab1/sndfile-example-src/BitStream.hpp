@@ -17,13 +17,13 @@ class BitStream {
         int pointer;
         unsigned char buffer;
 
-    
+
     public:
             BitStream();
-            BitStream(const char *filename, char mode);
+            BitStream(const char filename, char mode);
             unsigned char readBit();
             void writeBit(char bit);
-            void readNBits(int n, unsigned char *bits);
+            void readNBits(int n, unsigned charbits);
             void writeNBits(int n, unsigned char *bits);
             bool eof();
             void close();

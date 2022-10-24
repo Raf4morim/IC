@@ -100,7 +100,3 @@ void BitStream::close() {
 
     file.close();
 }
-
-
-
-

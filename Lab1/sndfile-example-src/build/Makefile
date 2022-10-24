@@ -181,6 +181,19 @@ wav_cmp/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/wav_cmp.dir/build.make CMakeFiles/wav_cmp.dir/build
 .PHONY : wav_cmp/fast
 
+#=============================================================================
+# Target rules for targets named BitStream
+
+# Build rule for target.
+BitStream: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 BitStream
+.PHONY : BitStream
+
+# fast build rule for target.
+BitStream/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BitStream.dir/build.make CMakeFiles/BitStream.dir/build
+.PHONY : BitStream/fast
+
 wav_cmp.o: wav_cmp.cpp.o
 .PHONY : wav_cmp.o
 
@@ -309,6 +322,7 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... BitStream"
 	@echo "... wav_cmp"
 	@echo "... wav_cp"
 	@echo "... wav_dct"

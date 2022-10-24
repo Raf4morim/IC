@@ -30,3 +30,6 @@ target_link_libraries (wav_cmp sndfile)
 # target_link_libraries(wav_effects sndfile)
 
 # add_executable(encode_decode encode_decode.cpp)
+
+add_executable (BitStream BitStream.h)
+target_link_libraries (BitStream sndfile)
