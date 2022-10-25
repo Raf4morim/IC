@@ -1,6 +1,3 @@
-#ifndef BITSTREAM_H
-#define BITSTREAM_H
-
 #include <iostream>
 #include <fstream>
 #include <string>
@@ -18,7 +15,7 @@ using namespace std;
 class BitStream {
     private:
         struct BitBuffer{
-            unsigned const int bufferSize = 8;
+            int bufferSize = 8;
             unsigned char byte = 0;
             int contagem = 0;
         };
@@ -26,12 +23,10 @@ class BitStream {
         fstream ficheiro; //ficheiro de leitura e escrita
         string modo;
         string filename;
-        // //create a variable that hold multiple arrays of 8 bits
-        // std::vector<std::vector<int>> byteArray;
-        // //create a variable that holds the current array of 8 bits
-        // std::vector<int> bitArray;
+        
         int tamanho;
         int ptr;
+        
         
     public:
         BitStream(string filename, string modo) {
@@ -39,7 +34,6 @@ class BitStream {
             if (modo == "r") {
                 ficheiro.open(filename, ios::in | ios::binary);
             } else if (modo == "w") {
-                ptr = 8;
                 ficheiro.open(filename, ios::out | ios::binary);
             } else {
                 throw "Modo inválido";
@@ -53,21 +47,22 @@ class BitStream {
             int size = ficheiro.tellg();
             ficheiro.seekg(0, std::ios::beg);
             return size;
-        }
-        
-        unsigned char readBit() {
+        }    
+
+        int readBit() {                                                     // ler um bit do ficheiro
             if (modo != "r") throw "Modo Inválido";
-            if(bitBuffer.contagem == 0 && readFile() == EOF) return EOF;
-            unsigned char tmp = bitBuffer.byte & 1;                         //bit mais significativo
-            bitBuffer.byte >>= 1;                                           //desloca 1 bit para a direita  
-            bitBuffer.contagem--;                                           //decrementa o contador
-            if (tmp == 0) return 0;
+
+            if(bitBuffer.contagem == 0 && readFile() == EOF) return EOF;    // se o buffer estiver vazio e o ficheiro estiver vazio, retorna EOF
+            unsigned char tmp = bitBuffer.byte & 1;                         // bit mais significativo
+            bitBuffer.byte <<= 1;                                           // desloca 1 bit para a direita  
+            bitBuffer.contagem--;                                           // decrementa o contador
+            if (tmp == 0) return 0;                                         
             else return 1;
         }
 
-        int writeBit(char bit) {
+        int writeBit(int bit) {                                             // escreve um bit no ficheiro
             if (modo != "w") throw "Modo Inválido";
-            if (bit == 1) bitBuffer.byte |= 1 << bitBuffer.contagem;  //bit mais significativo a 1 
+            if (bit == 1) bitBuffer.byte |= 1 >> bitBuffer.contagem;        // se o bit for 1, faz um OR com o byte
             bitBuffer.contagem++;
             return writeFile();
         }
@@ -76,9 +71,15 @@ class BitStream {
             if (modo != "r") throw "Modo Inválido";
             int bit;
             vector <int> tmp;
-            
+            // Reverter o vector //
+            for (int i = 0; i < n; i++) {   
+                bit = readBit();
+                if (bit == EOF) return tmp;
+                tmp.push_back(bit);                                         // adiciona o bit ao vector
+            }
+            ///////////////////////
             for (int i = 0; i < n; i++) {
-                if ((bit = readBit()) == EOF) throw std::runtime_error("The file doesn't have those many bits");
+                if ((bit = readBit()) == EOF) throw runtime_error("The file doesn't have those many bits"); // se o ficheiro não tiver bits suficientes, lança uma exceção
                 printf("%d",bit);
                 tmp[i] = bit;
             }
@@ -87,31 +88,34 @@ class BitStream {
 
         int writeBits(vector<int> bits) {
             if (modo != "w") throw "Modo Inválido";
-            for (int i = 0; i < bits.size(); i++) {
+            for (long unsigned int i = 0; i < bits.size(); i++) {
                 writeBit(bits[i]);
             }
             return 1;
         }
 
         int readFile(){
-            if (modo != "r")    throw "Modo Inválido";      
-            if(ficheiro.peek() == EOF) return EOF;
+            if (modo == "w" || !ficheiro.is_open()) return 0;    
+            if(ficheiro.peek() == EOF) return EOF;          // se o ficheiro estiver vazio, retorna EOF
+            unsigned char byte; 
             if(bitBuffer.contagem == 0) {                   //se o buffer estiver vazio
-                ficheiro.read((char *) &bitBuffer.byte, 1); //lê um byte do ficheiro
+                ficheiro.read((char *) &byte, 1);           //lê um byte do ficheiro
+                bitBuffer.byte = byte;                      //coloca o byte no buffer
                 bitBuffer.contagem = bitBuffer.bufferSize;  //coloca o contador a 8
             }
-            return bitBuffer.byte;                          //retorna o byte lido
+            return 1;                          //retorna o byte lido
         }
 
         int writeFile(){
             if (modo != "w")    throw "Modo Inválido";
             if(bitBuffer.contagem == bitBuffer.bufferSize) {    //se o buffer estiver cheio
-                ficheiro.write((char *) &bitBuffer.byte, 1);    //escreve o byte no ficheiro
+                // ficheiro.write((char *) &bitBuffer.byte, 1);    //escreve o byte no ficheiro
                 bitBuffer.contagem = 0;                         //coloca o contador a 0
                 bitBuffer.byte = 0;                             //coloca o byte a 0
                 ficheiro.put(bitBuffer.byte);                   //escreve o byte no ficheiro
+                return 1;
             }
-            return bitBuffer.byte;                              //retorna o byte escrito
+            return 0;                              //retorna o byte escrito
         }
 
         void close() {
@@ -120,4 +124,3 @@ class BitStream {
             ficheiro.close();
         }
 };
-#endif

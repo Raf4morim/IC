@@ -15,7 +15,8 @@
         "initializer_list": "cpp",
         "string_view": "cpp",
         "utility": "cpp",
-        "map": "cpp"
+        "map": "cpp",
+        "stdexcept": "cpp"
     },
     "cSpell.ignoreWords": [
         "Ficheiro"

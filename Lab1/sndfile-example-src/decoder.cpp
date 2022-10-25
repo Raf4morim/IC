@@ -12,10 +12,8 @@ int main (int argc, char *argv[]) {
         return 1 ;
     }
 
-    //open the input file
     BitStream inputFile (argv [1], "r") ;
     
-    //open the output file
     ofstream outputFile (argv [2], ios::out) ;
     if (! outputFile) {
         cerr << "Error: could not open output file " << argv [2] << ".\n" ;
@@ -28,7 +26,7 @@ int main (int argc, char *argv[]) {
     inputFile.close();
 
     //write the bits to the output file
-    for (int i = 0; i < bits.size(); i++){
+    for (long unsigned int i = 0; i < bits.size(); i++){
         outputFile << bits[i];
     }
     outputFile.close();
