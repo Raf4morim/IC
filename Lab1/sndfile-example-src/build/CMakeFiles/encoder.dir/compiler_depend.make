@@ -188,135 +188,22 @@ CMakeFiles/encoder.dir/encoder.cpp.o: /mnt/c/Users/repol/Documents/GitHub/IC/Lab
   /usr/include/x86_64-linux-gnu/c++/9/bits/basic_file.h \
   /usr/include/x86_64-linux-gnu/c++/9/bits/c++io.h \
   /usr/include/c++/9/bits/fstream.tcc \
-  /usr/include/c++/9/map \
-  /usr/include/c++/9/bits/stl_tree.h \
-  /usr/include/c++/9/ext/aligned_buffer.h \
-  /usr/include/c++/9/bits/node_handle.h \
-  /usr/include/c++/9/optional \
-  /usr/include/c++/9/utility \
-  /usr/include/c++/9/bits/stl_relops.h \
-  /usr/include/c++/9/bits/enable_special_members.h \
-  /usr/include/c++/9/bits/stl_map.h \
-  /usr/include/c++/9/tuple \
-  /usr/include/c++/9/array \
-  /usr/include/c++/9/bits/uses_allocator.h \
-  /usr/include/c++/9/bits/invoke.h \
-  /usr/include/c++/9/bits/stl_multimap.h \
-  /usr/include/c++/9/bits/erase_if.h \
   /usr/include/c++/9/vector \
   /usr/include/c++/9/bits/stl_construct.h \
   /usr/include/c++/9/bits/stl_uninitialized.h \
+  /usr/include/c++/9/utility \
+  /usr/include/c++/9/bits/stl_relops.h \
   /usr/include/c++/9/bits/stl_vector.h \
   /usr/include/c++/9/bits/stl_bvector.h \
   /usr/include/c++/9/bits/vector.tcc \
-  /usr/include/c++/9/stdlib.h \
-  /usr/include/c++/9/math.h \
-  /usr/include/c++/9/cmath \
-  /usr/include/math.h \
-  /usr/include/x86_64-linux-gnu/bits/math-vector.h \
-  /usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h \
-  /usr/include/x86_64-linux-gnu/bits/flt-eval-method.h \
-  /usr/include/x86_64-linux-gnu/bits/fp-logb.h \
-  /usr/include/x86_64-linux-gnu/bits/fp-fast.h \
-  /usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h \
-  /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
-  /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h \
-  /usr/include/x86_64-linux-gnu/bits/iscanonical.h \
-  /usr/include/x86_64-linux-gnu/bits/mathinline.h \
-  /usr/include/c++/9/bits/specfun.h \
-  /usr/include/c++/9/tr1/gamma.tcc \
-  /usr/include/c++/9/tr1/special_function_util.h \
-  /usr/include/c++/9/tr1/bessel_function.tcc \
-  /usr/include/c++/9/tr1/beta_function.tcc \
-  /usr/include/c++/9/tr1/ell_integral.tcc \
-  /usr/include/c++/9/tr1/exp_integral.tcc \
-  /usr/include/c++/9/tr1/hypergeometric.tcc \
-  /usr/include/c++/9/tr1/legendre_function.tcc \
-  /usr/include/c++/9/tr1/modified_bessel_func.tcc \
-  /usr/include/c++/9/tr1/poly_hermite.tcc \
-  /usr/include/c++/9/tr1/poly_laguerre.tcc \
-  /usr/include/c++/9/tr1/riemann_zeta.tcc \
-  /usr/include/c++/9/sstream \
-  /usr/include/c++/9/bits/sstream.tcc \
-  /usr/include/c++/9/bitset \
-  /usr/include/c++/9/algorithm \
-  /usr/include/c++/9/bits/stl_algo.h \
-  /usr/include/c++/9/bits/algorithmfwd.h \
-  /usr/include/c++/9/bits/stl_heap.h \
-  /usr/include/c++/9/bits/stl_tempbuf.h \
-  /usr/include/c++/9/bits/uniform_int_dist.h \
-  /usr/include/c++/9/pstl/glue_algorithm_defs.h \
-  /usr/include/c++/9/functional \
-  /usr/include/c++/9/bits/refwrap.h \
-  /usr/include/c++/9/bits/std_function.h \
-  /usr/include/c++/9/unordered_map \
-  /usr/include/c++/9/bits/hashtable.h \
-  /usr/include/c++/9/bits/hashtable_policy.h \
-  /usr/include/c++/9/bits/unordered_map.h \
-  /usr/include/c++/9/pstl/execution_defs.h
+  /usr/include/c++/9/bitset
 
-
-/usr/include/c++/9/pstl/execution_defs.h:
-
-/usr/include/c++/9/bits/unordered_map.h:
-
-/usr/include/c++/9/functional:
-
-/usr/include/c++/9/pstl/glue_algorithm_defs.h:
-
-/usr/include/c++/9/tr1/riemann_zeta.tcc:
-
-/usr/include/c++/9/tr1/modified_bessel_func.tcc:
-
-/usr/include/c++/9/tr1/legendre_function.tcc:
-
-/usr/include/c++/9/tr1/exp_integral.tcc:
-
-/usr/include/c++/9/tr1/bessel_function.tcc:
-
-/usr/include/c++/9/bits/specfun.h:
-
-/usr/include/x86_64-linux-gnu/bits/mathinline.h:
-
-/usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h:
-
-/usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h:
-
-/usr/include/x86_64-linux-gnu/bits/mathcalls.h:
-
-/usr/include/x86_64-linux-gnu/bits/math-vector.h:
-
-/usr/include/c++/9/cmath:
-
-/usr/include/c++/9/stdlib.h:
-
-/usr/include/c++/9/vector:
-
-/usr/include/math.h:
-
-/usr/include/c++/9/bits/erase_if.h:
-
-/usr/include/c++/9/bits/invoke.h:
-
-/usr/include/c++/9/bits/uses_allocator.h:
-
-/usr/include/c++/9/math.h:
-
-/usr/include/c++/9/array:
-
-/usr/include/c++/9/sstream:
-
-/usr/include/c++/9/bits/enable_special_members.h:
 
 /usr/include/c++/9/bits/stl_relops.h:
 
 /usr/include/c++/9/utility:
 
-/usr/include/c++/9/bits/node_handle.h:
-
-/usr/include/c++/9/bits/stl_tree.h:
-
-/usr/include/c++/9/map:
+/usr/include/c++/9/vector:
 
 /usr/include/c++/9/fstream:
 
@@ -328,19 +215,13 @@ CMakeFiles/encoder.dir/encoder.cpp.o: /mnt/c/Users/repol/Documents/GitHub/IC/Lab
 
 /usr/include/c++/9/bits/ostream.tcc:
 
-/usr/include/c++/9/bits/hashtable.h:
-
 /usr/include/c++/9/bits/basic_ios.tcc:
 
 /usr/include/x86_64-linux-gnu/c++/9/bits/ctype_inline.h:
 
-/usr/include/c++/9/ext/aligned_buffer.h:
-
 /usr/include/c++/9/bits/fstream.tcc:
 
 /usr/include/c++/9/bits/streambuf_iterator.h:
-
-/usr/include/c++/9/bits/stl_algo.h:
 
 /usr/include/c++/9/bits/basic_ios.h:
 
@@ -360,15 +241,11 @@ CMakeFiles/encoder.dir/encoder.cpp.o: /mnt/c/Users/repol/Documents/GitHub/IC/Lab
 
 /usr/include/errno.h:
 
-/usr/include/c++/9/bits/sstream.tcc:
-
 /usr/include/x86_64-linux-gnu/bits/stdio_lim.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h:
 
 /usr/include/c++/9/cstdio:
-
-/usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h:
 
 /usr/include/c++/9/bits/std_abs.h:
 
@@ -376,15 +253,11 @@ CMakeFiles/encoder.dir/encoder.cpp.o: /mnt/c/Users/repol/Documents/GitHub/IC/Lab
 
 /usr/include/x86_64-linux-gnu/bits/stdlib-float.h:
 
-/usr/include/c++/9/tr1/poly_hermite.tcc:
-
 /usr/include/alloca.h:
 
 /usr/include/x86_64-linux-gnu/bits/select2.h:
 
 /usr/include/x86_64-linux-gnu/sys/select.h:
-
-/usr/include/c++/9/bits/stl_map.h:
 
 /usr/include/x86_64-linux-gnu/bits/uintn-identity.h:
 
@@ -408,10 +281,6 @@ CMakeFiles/encoder.dir/encoder.cpp.o: /mnt/c/Users/repol/Documents/GitHub/IC/Lab
 
 /usr/include/c++/9/ext/type_traits.h:
 
-/usr/include/c++/9/bits/std_function.h:
-
-/usr/include/c++/9/tr1/ell_integral.tcc:
-
 /usr/include/c++/9/bits/nested_exception.h:
 
 /usr/include/c++/9/cctype:
@@ -430,13 +299,9 @@ CMakeFiles/encoder.dir/encoder.cpp.o: /mnt/c/Users/repol/Documents/GitHub/IC/Lab
 
 /usr/include/c++/9/bits/basic_string.h:
 
-/usr/include/x86_64-linux-gnu/bits/fp-logb.h:
-
 /usr/include/c++/9/streambuf:
 
 /usr/include/x86_64-linux-gnu/bits/long-double.h:
-
-/usr/include/c++/9/bits/hashtable_policy.h:
 
 /usr/include/c++/9/bits/stl_algobase.h:
 
@@ -476,8 +341,6 @@ CMakeFiles/encoder.dir/encoder.cpp.o: /mnt/c/Users/repol/Documents/GitHub/IC/Lab
 
 /usr/include/c++/9/cwchar:
 
-/usr/include/x86_64-linux-gnu/bits/flt-eval-method.h:
-
 /usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/sigset_t.h:
@@ -494,17 +357,11 @@ CMakeFiles/encoder.dir/encoder.cpp.o: /mnt/c/Users/repol/Documents/GitHub/IC/Lab
 
 /usr/include/c++/9/ostream:
 
-/usr/include/c++/9/bits/stl_multimap.h:
-
 /usr/include/stdint.h:
-
-/usr/include/c++/9/tr1/gamma.tcc:
 
 /usr/include/c++/9/iostream:
 
 /usr/include/c++/9/bits/hash_bytes.h:
-
-/usr/include/x86_64-linux-gnu/bits/fp-fast.h:
 
 /usr/include/c++/9/bits/cpp_type_traits.h:
 
@@ -522,15 +379,11 @@ CMakeFiles/encoder.dir/encoder.cpp.o: /mnt/c/Users/repol/Documents/GitHub/IC/Lab
 
 /usr/include/x86_64-linux-gnu/bits/types/mbstate_t.h:
 
-/usr/include/c++/9/bits/refwrap.h:
-
 /usr/include/x86_64-linux-gnu/bits/stdio2.h:
 
 /usr/include/x86_64-linux-gnu/bits/stdlib-bsearch.h:
 
 /usr/include/c++/9/bits/ostream_insert.h:
-
-/usr/include/c++/9/tr1/poly_laguerre.tcc:
 
 /usr/include/c++/9/bits/vector.tcc:
 
@@ -551,8 +404,6 @@ CMakeFiles/encoder.dir/encoder.cpp.o: /mnt/c/Users/repol/Documents/GitHub/IC/Lab
 /usr/include/x86_64-linux-gnu/bits/types/wint_t.h:
 
 /usr/include/c++/9/bits/char_traits.h:
-
-/usr/include/c++/9/algorithm:
 
 /usr/include/c++/9/bits/locale_facets.h:
 
@@ -590,8 +441,6 @@ CMakeFiles/encoder.dir/encoder.cpp.o: /mnt/c/Users/repol/Documents/GitHub/IC/Lab
 
 /usr/include/c++/9/bits/localefwd.h:
 
-/usr/include/c++/9/unordered_map:
-
 /usr/include/x86_64-linux-gnu/bits/timesize.h:
 
 /usr/include/x86_64-linux-gnu/bits/typesizes.h:
@@ -623,8 +472,6 @@ CMakeFiles/encoder.dir/encoder.cpp.o: /mnt/c/Users/repol/Documents/GitHub/IC/Lab
 /usr/include/c++/9/bits/stl_iterator.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/time_t.h:
-
-/usr/include/c++/9/tr1/hypergeometric.tcc:
 
 /usr/include/x86_64-linux-gnu/c++/9/bits/os_defines.h:
 
@@ -662,8 +509,6 @@ CMakeFiles/encoder.dir/encoder.cpp.o: /mnt/c/Users/repol/Documents/GitHub/IC/Lab
 
 /usr/include/x86_64-linux-gnu/bits/struct_mutex.h:
 
-/usr/include/c++/9/tr1/special_function_util.h:
-
 /usr/include/x86_64-linux-gnu/bits/errno.h:
 
 /usr/include/c++/9/new:
@@ -690,15 +535,11 @@ CMakeFiles/encoder.dir/encoder.cpp.o: /mnt/c/Users/repol/Documents/GitHub/IC/Lab
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h:
 
-/usr/include/c++/9/tuple:
-
 /usr/include/endian.h:
 
 /usr/include/c++/9/ios:
 
 /usr/include/x86_64-linux-gnu/bits/types/clock_t.h:
-
-/usr/include/x86_64-linux-gnu/bits/iscanonical.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h:
 
@@ -707,8 +548,6 @@ CMakeFiles/encoder.dir/encoder.cpp.o: /mnt/c/Users/repol/Documents/GitHub/IC/Lab
 /usr/include/x86_64-linux-gnu/bits/types/timer_t.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_itimerspec.h:
-
-/usr/include/c++/9/bits/algorithmfwd.h:
 
 /usr/include/x86_64-linux-gnu/bits/thread-shared-types.h:
 
@@ -734,25 +573,15 @@ CMakeFiles/encoder.dir/encoder.cpp.o: /mnt/c/Users/repol/Documents/GitHub/IC/Lab
 
 /usr/include/c++/9/bits/cxxabi_forced.h:
 
-/usr/include/c++/9/bits/stl_tempbuf.h:
-
 /usr/include/c++/9/bitset:
 
 /usr/include/c++/9/ext/alloc_traits.h:
-
-/usr/include/c++/9/bits/stl_heap.h:
-
-/usr/include/c++/9/tr1/beta_function.tcc:
-
-/usr/include/c++/9/optional:
 
 /usr/include/x86_64-linux-gnu/bits/wctype-wchar.h:
 
 /usr/include/c++/9/bits/alloc_traits.h:
 
 /usr/include/c++/9/string_view:
-
-/usr/include/c++/9/bits/uniform_int_dist.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h:
 

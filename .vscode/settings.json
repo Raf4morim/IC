@@ -16,7 +16,26 @@
         "string_view": "cpp",
         "utility": "cpp",
         "map": "cpp",
-        "stdexcept": "cpp"
+        "stdexcept": "cpp",
+        "cctype": "cpp",
+        "clocale": "cpp",
+        "cstdint": "cpp",
+        "cstdio": "cpp",
+        "cstdlib": "cpp",
+        "cwchar": "cpp",
+        "cwctype": "cpp",
+        "deque": "cpp",
+        "unordered_map": "cpp",
+        "exception": "cpp",
+        "functional": "cpp",
+        "iostream": "cpp",
+        "limits": "cpp",
+        "new": "cpp",
+        "sstream": "cpp",
+        "streambuf": "cpp",
+        "string": "cpp",
+        "tuple": "cpp",
+        "typeinfo": "cpp"
     },
     "cSpell.ignoreWords": [
         "Ficheiro"

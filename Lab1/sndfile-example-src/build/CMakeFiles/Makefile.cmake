@@ -48,6 +48,7 @@ set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/wav_dct.dir/DependInfo.cmake"
   "CMakeFiles/wav_quant.dir/DependInfo.cmake"
   "CMakeFiles/wav_cmp.dir/DependInfo.cmake"
+  "CMakeFiles/wav_effects.dir/DependInfo.cmake"
   "CMakeFiles/encoder.dir/DependInfo.cmake"
   "CMakeFiles/decoder.dir/DependInfo.cmake"
   )
