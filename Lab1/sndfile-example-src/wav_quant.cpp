@@ -9,10 +9,10 @@ constexpr size_t FRAMES_BUFFER_SIZE = 65536;
 
 int main(int argc, char **argv){
     SndfileHandle input{argv[1]};
-    SndfileHandle output{argv[3], SFM_WRITE, input.format(), input.channels(), input.samplerate()};
-    int n_bits = stoi(argv[2]);
+    SndfileHandle output{argv[2], SFM_WRITE, input.format(), input.channels(), input.samplerate()};
+    int n_bits = stoi(argv[3]);
 
-    if (argc != 4) throw  "Usage: ../sndfile-example-bin/wav_quant <input_wav> <n_bits> <output_wav>" ;
+    if (argc != 4) throw  "Usage: ../sndfile-example-bin/wav_quant <input_wav> <output_wav> <n_bits>" ;
     if (input.error()) throw "Error opening input file ";
     if ((input.format() & SF_FORMAT_TYPEMASK) != SF_FORMAT_WAV) throw "Input file is not a WAV file";
     if ((input.format() & SF_FORMAT_SUBMASK) != SF_FORMAT_PCM_16) throw "Input file is not a 16-bit PCM WAV file";
@@ -24,7 +24,6 @@ int main(int argc, char **argv){
     size_t n_frames;
     int length {0};
     while ((n_frames = input.readf(samples.data(), FRAMES_BUFFER_SIZE))){
-        length += n_frames * input.channels();          // Somatorio de todos os frames lidos
         samples.resize(n_frames * input.channels());    // Redimensiona o vetor de acordo com o numero de frames lidos
         quantizer.escUn(samples, 16-n_bits);            // Escalonamento uniforme
     }

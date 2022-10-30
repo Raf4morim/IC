@@ -16,7 +16,6 @@ public:
         this->n_frames = n_frames;
         quantizado.resize(n_frames);
     }
-
     void escUn(vector<short> &samples, int n_bits){         // Escala uniforme
         short sampleCut;
         for (auto& sample : samples) {
@@ -25,7 +24,6 @@ public:
             quantizado.insert(quantizado.end(), sampleCut); // inserimos no vetor
         }
     }
-    
     void toFile(SndfileHandle output) const{
         output.write(quantizado.data(), quantizado.size()); // escreve no arquivo de saida os valores quantizados
     }

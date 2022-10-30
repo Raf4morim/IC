@@ -19,8 +19,7 @@ public:
 		c.resize(sfh.channels());			// redefinimos o tamanho do vector c para o numero de canais do ficheiro de audio
 	}
 
-	void update(const std::vector<short> & samples)
-	{
+	void update(const std::vector<short> & samples){
 		for(int i=0; i < (int) samples.size()/2; i+=2){
 			c[0][samples[i]]++;				// incrementamos o valor da chave correspondente ao valor do sample no canal 0			
 			c[1][samples[i+1]]++;			// incrementamos o valor da chave correspondente ao valor do sample no canal 1
