@@ -42,20 +42,4 @@ Go to the diretory with make file -> ./Lab1/sndfile-example-src/
     Change the CMakeLists.txt
     > make
     > ../sndfile-example-bin/decoder encExemplo.txt decExemplo.txt
-
-### 8:
-    Change the CMakeLists.txt
-    > make
-    > ../sndfile-example-bin/lossE ...
     
-<br>
-    
-    Change the CMakeLists.txt
-    > make
-    > ../sndfile-example-bin/lossD ...
-
-## Contribuições
-
-    Rafael Amorim -> 49%
-    Diogo Fontes -> 49%
-    Renato Ourives -> 2%
