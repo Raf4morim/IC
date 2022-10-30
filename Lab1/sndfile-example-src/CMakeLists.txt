@@ -32,5 +32,11 @@ target_link_libraries(wav_effects sndfile)
 add_executable(encoder encoder.cpp)
 target_link_libraries(encoder sndfile)
 
-# add_executable(decoder decoder.cpp)
-# target_link_libraries(decoder sndfile)
+add_executable(decoder decoder.cpp)
+target_link_libraries(decoder sndfile)
+
+# add_executable(lossyE lossyE.cpp)
+# target_link_libraries(lossyE sndfile)
+
+# add_executable(lossyD lossyD.cpp)
+# target_link_libraries(lossyD sndfile)

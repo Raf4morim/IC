@@ -35,7 +35,7 @@ int main(int argc, char **argv) {
     origFile.resize(n_frames_origFile * input1.channels());
     quantFile.resize(n_frames_origFile * input2.channels());
     // Percorrer a matriz td de samples
-    for(int i = 0; i < int(origFile.size()); i++){
+    for(long unsigned int i = 0; i < origFile.size(); i++){
         x += pow(abs(origFile[i]), 2); 
         errTempor = abs(origFile[i] - quantFile[i]);
         r += pow(errTempor, 2);
@@ -46,8 +46,8 @@ int main(int argc, char **argv) {
   r = 1/totalSamples * r;
 
   snr = 10 * log10(r/x);  // signal-to-noise = ruido/normal
-  cout << "SNR: " << snr << endl;
-  cout << "Max per sample: " << errM << endl;
+  cout << "SNR is " << snr << endl;
+  cout << "Maximum per sample absolute error is " << errM << endl;
 
   return 0;
 

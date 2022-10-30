@@ -32,22 +32,22 @@ public:
 
 	void midD(void) {
 		std::ofstream midFile("midChannel.dat");
-		for (auto [value, counter] : mid_ch)
-			midFile << value << '\t' << counter << '\n';
+		for (auto [valor, cont] : mid_ch)
+			midFile << valor << '\t' << cont << '\n';
 		midFile.close();
 	}
 
 	void sideD(void) {
 		std::ofstream sideFile("sideChannel.dat");
-		for (auto [value, counter] : side_ch)
-			sideFile << value << '\t' << counter << '\n';
+		for (auto [valor, cont] : side_ch)
+			sideFile << valor << '\t' << cont << '\n';
 		sideFile.close();
 	}
 
 	void dump(const size_t channel) const{ // O const
 		std::ofstream oF("channel.dat");
-		for (auto [value, counter] : c[channel])
-			oF << value << '\t' << counter << '\n';
+		for (auto [valor, cont] : c[channel])
+			oF << valor << '\t' << cont << '\n';
 		oF.close();
 	}
 };
