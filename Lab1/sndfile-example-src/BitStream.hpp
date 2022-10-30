@@ -6,7 +6,6 @@
 
 using namespace std;
 
-// C++ can only write bytes not bits. So we need to write a byte at a time.
 class BitStream {
     private:
         struct BitBuffer{
@@ -40,7 +39,6 @@ class BitStream {
             ficheiro.seekg(0, ios::beg);
             return size;
         }
-
         vector<int> revbitV(){
             vector<int> bitV;
             for (int i = 0; i < 8; i++){
@@ -82,45 +80,54 @@ class BitStream {
             return outBits;
         }
 
-
         void writeBit(int bit) {
-
             if (modo != 'w') throw "Invalid mode";
             if (bitBuffer.contagem == 8){
-                currentArrayPos++;
+                vector<int> invbitV;
+                bitBuffer.byte = 0;
+                for (int i = 0; i < 8; i++){
+                    invbitV.push_back(bitV[7-i]);
+                    bitBuffer.byte |= invbitV[i] << i;
+                }
+                char byte = bitBuffer.byte;
+                ficheiro.write(&byte, 1);
                 bitBuffer.contagem = 0;
             }
             if (bitBuffer.contagem == 0){
-                bitV = vector<int>(8);
-                byteV.push_back(bitV);
+                bitV = std::vector<int>(8);
             }
             bitV[bitBuffer.contagem] = bit;
-            byteV[currentArrayPos] = bitV;
             bitBuffer.contagem++;
-
         }
-        void writeBits(vector<int> bits) {
+
+        void writeBits(std::vector<int> bits) {
             if (modo != 'w') throw "Invalid mode";
-            int sz;
-            for(sz = bits.size(); sz > 0; sz--){
+            
+            int c = 0;
+            for(int sz = bits.size(); sz > 0; sz--){
                 if (bitBuffer.contagem == 8){
-                currentArrayPos++;
-                bitBuffer.contagem = 0;
+                    vector<int> invbitV;
+                    bitBuffer.byte = 0;
+                    for (int i = 0; i < 8; i++){
+                        invbitV.push_back(bitV[7-i]);
+                        bitBuffer.byte |= invbitV[i] << i;
+                    }
+                    char byte = bitBuffer.byte;
+                    ficheiro.write(&byte, 1);
+                    bitBuffer.contagem = 0;
                 }
                 if (bitBuffer.contagem == 0){
-                    bitV = vector<int>(8);
-                    byteV.push_back(bitV);
+                    bitV = std::vector<int>(8);
                 }
-                bitV[bitBuffer.contagem] = bits[sz];
-                byteV[currentArrayPos] = bitV;
+                bitV[bitBuffer.contagem] = bits[c];
                 bitBuffer.contagem++;
-                sz--;
+                c++;
             }
         }
         void close(){
             vector<int> invbitV;
             if (modo == 'w'){
-                for (long unsigned int i = 0; i < byteV.size(); i++){
+                for (long unsigned int i = 0; i <= byteV.size(); i++){
                     bitBuffer.byte = 0;
                     for (int i = 0; i < 8; i++){
                         invbitV.push_back(bitV[7-i]);

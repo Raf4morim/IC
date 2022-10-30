@@ -12,8 +12,7 @@ int main (int argc, char *argv[]) {
 
     string line;
     getline(iFile, line);                                       
-    cout << "Input file: " << line << endl;                     
-    cout << "Input file length: " << line.length() << endl;  
+    cout << "\n" << line << endl;                     
     iFile.close();
 
     BitStream outputFile (oFile, 'w') ;

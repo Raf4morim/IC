@@ -207,43 +207,6 @@ encoder/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/encoder.dir/build.make CMakeFiles/encoder.dir/build
 .PHONY : encoder/fast
 
-#=============================================================================
-# Target rules for targets named decoder
-
-# Build rule for target.
-decoder: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 decoder
-.PHONY : decoder
-
-# fast build rule for target.
-decoder/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/decoder.dir/build.make CMakeFiles/decoder.dir/build
-.PHONY : decoder/fast
-
-decoder.o: decoder.cpp.o
-.PHONY : decoder.o
-
-# target to build an object file
-decoder.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/decoder.dir/build.make CMakeFiles/decoder.dir/decoder.cpp.o
-.PHONY : decoder.cpp.o
-
-decoder.i: decoder.cpp.i
-.PHONY : decoder.i
-
-# target to preprocess a source file
-decoder.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/decoder.dir/build.make CMakeFiles/decoder.dir/decoder.cpp.i
-.PHONY : decoder.cpp.i
-
-decoder.s: decoder.cpp.s
-.PHONY : decoder.s
-
-# target to generate assembly for a file
-decoder.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/decoder.dir/build.make CMakeFiles/decoder.dir/decoder.cpp.s
-.PHONY : decoder.cpp.s
-
 encoder.o: encoder.cpp.o
 .PHONY : encoder.o
 
@@ -420,7 +383,6 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... decoder"
 	@echo "... encoder"
 	@echo "... wav_cmp"
 	@echo "... wav_cp"
@@ -428,9 +390,6 @@ help:
 	@echo "... wav_effects"
 	@echo "... wav_hist"
 	@echo "... wav_quant"
-	@echo "... decoder.o"
-	@echo "... decoder.i"
-	@echo "... decoder.s"
 	@echo "... encoder.o"
 	@echo "... encoder.i"
 	@echo "... encoder.s"

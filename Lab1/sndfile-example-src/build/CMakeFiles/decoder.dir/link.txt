@@ -1,1 +1,0 @@
-/usr/bin/c++  -Wall -Wextra -std=c++17 -O3 CMakeFiles/decoder.dir/decoder.cpp.o -o /mnt/c/Users/repol/Documents/GitHub/IC/Lab1/sndfile-example-bin/decoder  -lsndfile 

@@ -11,39 +11,14 @@ int main(int argc, char **argv) {
   SndfileHandle input1 { argv[1] };
   SndfileHandle input2 { argv[2] };
 
-  if(argc != 3) {
-    cerr << "Usage: " << argv[0] << " <input1_wav> <inputQuant_wav>" << endl;
-    return 1;
-  }
-  if(input1.error() || input2.error()) {
-    cerr << "Error opening one of the files" << endl;
-    return 1;
-  }
-  if((input1.samplerate() * input1.channels()) != (input2.samplerate() * input2.channels())) {
-    cerr << "Input files have different sample rate" << endl;
-    return 1;
-  }
-  if((input1.format() & SF_FORMAT_TYPEMASK) != SF_FORMAT_WAV) {
-    cerr << "Input file1 " << argv[1] << " is not a WAV file" << endl;
-    return 1;
-  }
-  if((input2.format() & SF_FORMAT_TYPEMASK) != SF_FORMAT_WAV) {
-    cerr << "Input file2 " << argv[2] << " is not a WAV file" << endl;
-    return 1;
-  }
-
-  if((input1.format() & SF_FORMAT_SUBMASK) != SF_FORMAT_PCM_16) {
-    cerr << "Input file1 " << argv[1] << " is not a 16-bit PCM WAV file" << endl;
-    return 1;
-  }
-  if((input2.format() & SF_FORMAT_SUBMASK) != SF_FORMAT_PCM_16) {
-    cerr << "Input file2 " << argv[2] << " is not a 16-bit PCM WAV file" << endl;
-    return 1;
-  }
-  if(input1.channels() != input2.channels()) {
-    cerr << "Input files have different number of channels" << endl;
-    return 1;
-  }
+  if(argc != 3) throw  "Usage: ../sndfile-example-bin/wav_cmp <input1_wav> <inputQuant_wav>";
+  if(input1.error() || input2.error()) throw "Error opening one of the files";
+  if((input1.samplerate() * input1.channels()) != (input2.samplerate() * input2.channels())) throw "Input files have different sample rate";
+  if((input1.format() & SF_FORMAT_TYPEMASK) != SF_FORMAT_WAV) throw "Input file is not a WAV file";
+  if((input2.format() & SF_FORMAT_TYPEMASK) != SF_FORMAT_WAV) throw "Input file2 is not a WAV file";
+  if((input1.format() & SF_FORMAT_SUBMASK) != SF_FORMAT_PCM_16) throw "Input file1 is not a 16-bit PCM WAV file";
+  if((input2.format() & SF_FORMAT_SUBMASK) != SF_FORMAT_PCM_16) throw "Input file2 is not a 16-bit PCM WAV file";
+  if(input1.channels() != input2.channels()) throw "Input files have different number of channels";
 
   vector <double> origFile(FRAMES_BUFFER_SIZE * input1.channels());
   vector <double> quantFile(FRAMES_BUFFER_SIZE * input2.channels());
