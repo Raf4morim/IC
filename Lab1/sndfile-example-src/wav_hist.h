@@ -20,7 +20,7 @@ public:
 	}
 
 	void update(const std::vector<short> & samples){
-		for(int i=0; i < (int) samples.size()/2; i+=2){
+		for(int i=0; i < (int) samples.size()/2; i+=2){	// percorremos de 2 em 2 porque 1 deles corresponde ao MidChannel e o outro ao SideChannel
 			c[0][samples[i]]++;				// incrementamos o valor da chave correspondente ao valor do sample no canal 0			
 			c[1][samples[i+1]]++;			// incrementamos o valor da chave correspondente ao valor do sample no canal 1
 			mid_ch[(samples[i] + samples[i+1]) / 2]++;	// Soma-se os 2 e divide-se por 2 para obter o valor do sample no canal mid
@@ -43,7 +43,7 @@ public:
 		sideFile.close();
 	}
 
-	void dump(const size_t channel) const{ // O const
+	void dump(const size_t channel) const{ 
 		std::ofstream oF("channel.dat");
 		for (auto [valor, cont] : c[channel])	// Percorre o map c[channel]
 			oF << valor << '\t' << cont << '\n';	// Escreve no ficheiro channel.dat o valor do sample e o numero de vezes que aparece

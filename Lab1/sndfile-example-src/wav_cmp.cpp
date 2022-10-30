@@ -27,7 +27,6 @@ int main(int argc, char **argv) {
   size_t  n_frames_quantFile;
 
   double errTempor, errM = 0;
-  
   double totalSamples = input1.samplerate() * input1.channels();
   double x = 0,  r = 0; // energia, ruido
   double snr;

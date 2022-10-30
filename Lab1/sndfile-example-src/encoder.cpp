@@ -10,19 +10,19 @@ int main (int argc, char *argv[]) {
     if (argc != 3) throw "Usage: ../sndfile-example-bin/encoder <input file> <output file>" ;
     if (! iFile) throw "Error: could not open input file." ;
 
-    string line;
-    getline(iFile, line);                                       
-    cout << "\n" << line << endl;                     
+    string buf;
+    getline(iFile, buf);                                       
+    cout << "\n" << buf << endl;                     
     iFile.close();
 
-    BitStream outputFile (oFile, 'w') ;     // cria arquivo de saida com o nome passado como parametro e abre para escrita  
+    BitStream oF (oFile, 'w') ;     // cria arquivo de saida com o nome passado como parametro e abre para escrita  
 
     vector<int> bits;
-    for (long unsigned int i = 0; i < line.length(); i++){
-        bits.push_back(line[i] - '0');
+    for (long unsigned int i = 0; i < buf.length(); i++){
+        bits.push_back(buf[i] - '0');
     }
-    outputFile.writeBits(bits);
-    outputFile.close();
+    oF.writeBits(bits);
+    oF.close();
 
     return 0;
 } ; 
