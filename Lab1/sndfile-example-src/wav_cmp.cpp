@@ -40,9 +40,6 @@ int main(int argc, char **argv) {
         errTempor = abs(origFile[i] - quantFile[i]); // Erro temporario
         r += pow(errTempor, 2); // Somatorio do ruido 
         if(errTempor > errM) errM = errTempor; // Erro maximo
-        // x += pow(abs(origFile[i]),2);
-        // r += pow(abs(origFile[i] - quantFile[i]),2);
-        // errM = abs(origFile[i] - quantFile[i]) > errM ? abs(origFile[i] - quantFile[i]) : errM;
     }
   }
 
