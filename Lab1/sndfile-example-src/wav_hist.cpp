@@ -23,11 +23,11 @@ int main(int argc, char *argv[]){
 	WAVHist histograma {sndFile};
 	while ((nFrames = sndFile.readf(samples.data(), FRAMES_BUFFER_SIZE))){
 		samples.resize(FRAMES_BUFFER_SIZE * sndFile.channels()); 
-		histograma.update(samples);
+		histograma.update(samples);	
 	}
-
-	if (channel == 0) histograma.midD();
-	else if (channel == 1) histograma.sideD();
-	else histograma.dump(size_t(channel));
+	
+	if (channel == 0) histograma.midD();		// 0 corresponde ao MidChannel
+	else if (channel == 1) histograma.sideD();	// 1 corresponde ao SideChannel
+	else histograma.dump(size_t(channel));		// qualquer outro valor corresponde ao canal especificado
 	return 0;
 }

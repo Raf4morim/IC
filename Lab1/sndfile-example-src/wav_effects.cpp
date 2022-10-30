@@ -22,7 +22,6 @@ int main(int argc, char **argv){
     if (effect != "SingleEcho" && effect != "MultipleEcho" && effect != "AmplitudeModulation" && effect != "reverse")
         throw " Must be one of the following: singleEcho, multipleEcho, amplitudeModulation, reverse";
     
-    
     float ganho = 0.0;
     int atraso = 0;
     float frequencia = 0.0;
@@ -55,57 +54,29 @@ int main(int argc, char **argv){
 
     if (effect == "SingleEcho" || effect == "MultipleEcho"){
         while (nFrames = input.readf(samples.data(), FRAMES_BUFFER_SIZE)){
-            samples.resize(nFrames * input.channels() );
-            if(effect == "SingleEcho")
-            {
+            samples.resize(nFrames * input.channels() );                    
+            if(effect == "SingleEcho"){
                 for (int i = 0; i < (int)samples.size(); i++){
-                    if(i >= atraso)
-                    {
-                        sample_out = (samples.at(i) + ganho * samples.at(i - atraso))/ (1 + ganho);
-                    }
-                    else
-                    {
-                        sample_out = samples.at(i); 
-                    }
-                out_smp.insert(out_smp.end(), sample_out);
-
+                    if(i >= atraso) sample_out = (samples.at(i) + ganho * samples.at(i - atraso))/ (1 + ganho); // y(n) =  x(n) + g * x(n - atraso) / (1 + g)
+                    else sample_out = samples.at(i);    // Passa para a saida o valor do sample
+                    out_smp.insert(out_smp.end(), sample_out);
                 }
-
-            }
-            else if (effect == "MultipleEcho")
-            {
+            }else if (effect == "MultipleEcho"){
                 for (int i = 0; i < (int)samples.size(); i++){
-                    if(i >= atraso)
-                    {
-                        sample_out = (samples.at(i) + ganho * out_smp.at(i - atraso))/ (1 + ganho);
-                    }
-                    else
-                    {
-                        sample_out = samples.at(i); 
-                    }
-                out_smp.insert(out_smp.end(), sample_out);
-            }
-
-                        
-        }
-             
-    } 
-} else if (effect == "AmplitudeModulation"){   
+                    if(i >= atraso) sample_out = (samples.at(i) + ganho * out_smp.at(i - atraso))/ (1 + ganho);     //y(n) = x(n) + g*y(n - atraso) / (1 + g)
+                    else sample_out = samples.at(i); 
+                    out_smp.insert(out_smp.end(), sample_out);
+                }         
+            } 
+        } 
+    } else if (effect == "AmplitudeModulation"){   
         while (nFrames = input.readf(samples.data(), FRAMES_BUFFER_SIZE)){
             samples.resize(nFrames * input.channels() );
             for (int i = 0; i < (int)samples.size(); i++){
-                sample_out = samples.at(i) * cos(2 * M_PI * i * (frequencia/ input.samplerate()));
+                sample_out = samples.at(i) * cos(2 * M_PI * i * (frequencia/ input.samplerate()));      //y(n) = x(n) * cos(2 * pi * n * (f / fs))
                 out_smp.insert(out_smp.end(), sample_out);
             }
         }
     }
     output.writef(out_smp.data(), out_smp.size() / input.channels());
-
 }
-
-
-        
-
-
-        
-

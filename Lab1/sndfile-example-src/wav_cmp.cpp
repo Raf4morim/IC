@@ -32,20 +32,20 @@ int main(int argc, char **argv) {
   double x = 0,  r = 0; // energia, ruido
   double snr;
   while(n_frames_origFile = input1.readf(origFile.data(), FRAMES_BUFFER_SIZE), n_frames_quantFile = input2.readf(quantFile.data(), FRAMES_BUFFER_SIZE)) {
-    origFile.resize(n_frames_origFile * input1.channels());
-    quantFile.resize(n_frames_origFile * input2.channels());
+    origFile.resize(n_frames_origFile * input1.channels()); 
+    quantFile.resize(n_frames_origFile * input2.channels());  // redefinir o tamanho do vector para o tamanho do ficheiro
     // Percorrer a matriz td de samples
     for(long unsigned int i = 0; i < origFile.size(); i++){
-        x += pow(abs(origFile[i]), 2); 
-        errTempor = abs(origFile[i] - quantFile[i]);
-        r += pow(errTempor, 2);
-        if(errTempor > errM) errM = errTempor;
+        x += pow(abs(origFile[i]), 2); // Somatorio de x^2
+        errTempor = abs(origFile[i] - quantFile[i]); // Erro temporario
+        r += pow(errTempor, 2); // Somatorio do ruido 
+        if(errTempor > errM) errM = errTempor; // Erro maximo
     }
   }
   x = 1/totalSamples * x;
   r = 1/totalSamples * r;
 
-  snr = 10 * log10(r/x);  // signal-to-noise = ruido/normal
+  snr = 10 * log10(r/x);  // ruido/normal
   cout << "SNR is " << snr << endl;
   cout << "Maximum per sample absolute error is " << errM << endl;
 

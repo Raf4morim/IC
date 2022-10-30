@@ -12,10 +12,10 @@ int main (int argc, char *argv[]) {
     if (! outputFile) throw "Error: could not open output file ";
 
     vector<int> bits;
-    bits = inputFile.readBits(inputFile.tamanhoF() * 8);
+    bits = inputFile.readBits(inputFile.tamanhoF() * 8);    // le todos os bits do arquivo de entrada e armazena em um vetor de inteiros 
     inputFile.close();
 
-    for (long unsigned int i = 0; i < bits.size(); i++) outputFile << bits[i];
+    for (long unsigned int i = 0; i < bits.size(); i++) outputFile << bits[i];    // escreve os bits no arquivo de saida
     outputFile.close();
     return 0;
 }

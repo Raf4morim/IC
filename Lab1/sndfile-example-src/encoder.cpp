@@ -15,7 +15,7 @@ int main (int argc, char *argv[]) {
     cout << "\n" << line << endl;                     
     iFile.close();
 
-    BitStream outputFile (oFile, 'w') ;
+    BitStream outputFile (oFile, 'w') ;     // cria arquivo de saida com o nome passado como parametro e abre para escrita  
 
     vector<int> bits;
     for (long unsigned int i = 0; i < line.length(); i++){

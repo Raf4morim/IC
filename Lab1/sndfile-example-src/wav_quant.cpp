@@ -24,9 +24,9 @@ int main(int argc, char **argv){
     size_t n_frames;
     int length {0};
     while ((n_frames = input.readf(samples.data(), FRAMES_BUFFER_SIZE))){
-        length += n_frames * input.channels();
-        samples.resize(n_frames * input.channels());
-        quantizer.escUn(samples, 16-n_bits);
+        length += n_frames * input.channels();          // Somatorio de todos os frames lidos
+        samples.resize(n_frames * input.channels());    // Redimensiona o vetor de acordo com o numero de frames lidos
+        quantizer.escUn(samples, 16-n_bits);            // Escalonamento uniforme
     }
     quantizer.toFile(output);
     return 0;
