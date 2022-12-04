@@ -1,15 +1,5 @@
 Lab2
 
-In a terminal, enter the **build** directory of your project
-```
-mkdir build && cd build
-```
-Then compile the code
-```
-cmake ..
-make
-```
-
 ### opencv4
 >sudo apt install libopencv-dev python3-opencv
 
